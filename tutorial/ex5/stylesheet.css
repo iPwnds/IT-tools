@@ -1,0 +1,24 @@
+table {
+    border: 1px solid grey;
+}
+
+.board_element{
+    border: 1px solid grey;
+    width: 100px;
+    height: 100px;
+    text-align: center; 
+    vertical-align: middle;
+}
+
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.emptpy {
+    background-color: lightgrey;
+}
