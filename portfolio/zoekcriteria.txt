@@ -6,6 +6,7 @@ De vragen die we moeten beantwoorden:
 
 Zoekcriteria:
 - digital ticket system concert
-
 - What ticketing system does ticketmaster use?
 - Taylor swift ticket problems
+- How could we improve the capacity of ticketing systems?
+- What ticketing system does ticketmaster use?
