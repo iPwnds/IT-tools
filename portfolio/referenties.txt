@@ -1,0 +1,4 @@
+Links en sources:
+- https://ieeexplore.ieee.org/abstract/document/5254230
+- https://www.usenix.org/legacy/events/ec98/full_papers/fujimura/fujimura.pdf
+
