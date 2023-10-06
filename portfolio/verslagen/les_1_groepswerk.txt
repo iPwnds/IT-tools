@@ -1,0 +1,12 @@
+6 oktober, 14 tot 16 uur 
+iedereen aanwezig, Dorien van groep geswitched 
+Notulist: Thijs Creemers, projectleider: John Cai 
+
+- eerste oefening op git: 
+na elkaar te helpen lukt het bij iedereen om het bestand te plaatsen in git
+
+- hoe gaan we dit aanpakken: iedereen zoekt samen voor zoekcriteria en zet het in een gedeeld bestand op google documents
+
+- elk gevonden zoekcriteria wordt besproken in groep 
+
+- alles wordt uiteindelijk in .txt documenten gezet en op git geplaatst
