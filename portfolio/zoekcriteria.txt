@@ -6,5 +6,5 @@ De vragen die we moeten beantwoorden:
 
 Zoekcriteria:
 
-- Ticketmaster taylor swift tickets
+- What ticketing system does ticketmaster use?
 - Taylor swift ticket problems
