@@ -1,0 +1,5 @@
+hoe ontstaan capaciteitsproblemen:
+
+-onverwachte drukte
+
+Ticketmaster's first mistake was being underprepared for the sheer volume of customers that tried to purchase tickets. Capacity planning is an important aspect of System Design, and when a system doesn't have sufficient safeguards in place to throttle requests, things can quickly spiral out of control.
