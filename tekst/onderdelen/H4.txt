@@ -1,0 +1,19 @@
+Nadelen van grote spelers:
+https://blog.bookingagentinfo.com/the-pros-and-cons-of-ticketmaster-for-concert-and-event-promoters/
+
+https://thehustle.co/the-sneaky-economics-of-ticketmaster/
+
+- Beperkte betaal opties
+- Beveiliging is miss niet zo sterk
+- Ticket refunds?
+- Bij vragen, moeilijk help desk → moet bellen
+- Reselling van tickets door thirdparty (bots zelfs)
+
+https://www.quora.com/What-are-the-main-types-of-online-ticketing-systems-for-events-concerts-etc-What-are-the-pros-and-cons-of-each-type-Which-one-do-you-prefer-and-why
+- Hoge service fees en commissies
+- Internet connectiviteit, serverdowntime
+- high cost of implementation and maintenance, and the need for technical expertise to operate and manage the system
+
+https://www.lcarscom.net/advantages-and-disadvantages-of-booking-concert-tickets-online/
+- Bookings errors
+- Crashes zijn onhadnig voor de klanten, deze klagen misschien aan.
