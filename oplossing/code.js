@@ -15,10 +15,23 @@ function draw_puzzle(puzzle){
     document.getElementById("puzzle_container").innerHTML = puzzle_html;
 }
 
-function generate_puzzle_html(puzzle){
+function generate_puzzle_html(my_puzzle){
     //TODO: Implementeer deze functie!
     //puzzle bevat een tweedimensionale lijst die de sliding puzzle voorstelt
     //Kijk naar de functie generate_board_html in voorbeeld 7 uit het hoorcollege voor inspiratie
+    let table = "";
+    for(let r = 0; r < my_puzzle.length; r++){  
+        let column = "";
+        column += "<tr>"
+        let row = "";
+        for(let c = 0; c < my_puzzle[r].length; c++){
+            row += "<td>"
+            row += my_puzzle[r][c];
+            row += "</td>";
+        }
+        column += row;
+        column += "</tr>";
+        table += column;
+    }
+    return `<table>${table}</table>`;
 }
-
-
