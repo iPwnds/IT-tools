@@ -16,4 +16,11 @@ https://www.quora.com/What-are-the-main-types-of-online-ticketing-systems-for-ev
 
 https://www.lcarscom.net/advantages-and-disadvantages-of-booking-concert-tickets-online/
 - Bookings errors
+<<<<<<< HEAD
 - Crashes zijn onhandig voor de klanten, deze klagen misschien aan.
+=======
+
+- Crashes zijn onhadnig voor de klanten, deze klagen misschien aan.
+
+
+>>>>>>> 51a60e0c2063082fc084a062c3b1eaac6d028db0
