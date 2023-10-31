@@ -16,7 +16,6 @@ https://www.quora.com/What-are-the-main-types-of-online-ticketing-systems-for-ev
 
 https://www.lcarscom.net/advantages-and-disadvantages-of-booking-concert-tickets-online/
 - Bookings errors
-- Crashes zijn onhandig voor de klanten, deze klagen misschien aan.
 
 - Crashes zijn onhadnig voor de klanten, deze klagen misschien aan.
 
@@ -31,3 +30,6 @@ https://www.deskdirector.com/dd-blog/10-benefits-of-an-online-ticketing-system
 
 
 https://www.similarweb.com/top-websites/e-commerce-and-shopping/tickets/
+
+
+>>>>>>> 51a60e0c2063082fc084a062c3b1eaac6d028db0
