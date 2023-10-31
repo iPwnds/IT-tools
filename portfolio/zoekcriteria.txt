@@ -8,8 +8,10 @@ De vragen die we moeten beantwoorden:
 Zoekcriteria:
 - digital ticket system concert
 - What ticketing system does ticketmaster use?
-- Taylor swift ticket problems
+- "Taylor swift" ticket problems
 - How could we improve the capacity of ticketing systems?
+- Capacity problems
+- Overflow servers
 - What ticketing system does ticketmaster use?
 - What advantages do big events have when using a digital ticket system?
 
