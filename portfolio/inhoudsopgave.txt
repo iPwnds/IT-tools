@@ -5,6 +5,7 @@ Problemen met ticketsystemen    (Sonia, abstracte info en Lode, specifiek Taylor
     (voorbeelden van bedrijven, andere situaties/landschap)
 
 
+
 Capaciteitsproblemen in de ticketverkoop    (Tom)
 2.1 Beschrijving capaciteitsproblemen
 2.2 Oorzaken van capaciteitsproblemen
@@ -18,6 +19,7 @@ Belangen van ticketsysteembedrijven         (John)
 3.3 Imago en merkreputatie
 
 Belangen voor klanten/gebruikers            (Thijs)
+
 4.1 Voordelen
 4.2 Nadelen
 
