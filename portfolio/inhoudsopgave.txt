@@ -1,38 +1,38 @@
 Introductie
 
-Problemen met ticketsystemen
+Problemen met ticketsystemen    (Sonia, abstracte info en Lode, specifiek Taylorswift)
     over de problemen met ticketverkoop voor Taylor Swift-concerten
     (voorbeelden van bedrijven, andere situaties/landschap)
 
 
-Capaciteitsproblemen in de ticketverkoop
+Capaciteitsproblemen in de ticketverkoop    (Tom)
 2.1 Beschrijving capaciteitsproblemen
 2.2 Oorzaken van capaciteitsproblemen
 2.3 Technologische oplossingen
 2.4 Operationele oplossingen
 
 
-Belangen van ticketsysteembedrijven
+Belangen van ticketsysteembedrijven         (John)
 3.1 Winstmaximalisatie
 3.2 Klanttevredenheid
 3.3 Imago en merkreputatie
 
-Belangen voor klanten/gebruikers
+Belangen voor klanten/gebruikers            (Thijs)
 4.1 Voordelen
 4.2 Nadelen
 
-Machtsmisbruik door grote spelers
+Machtsmisbruik door grote spelers           (Florian)
 5.1 Prijsstelling en commissies
 5.2 Exclusieve deals            (= Winstmaximalisatie bvb.)
 5.3 Beperking van keuze voor consumenten
 
-Maatregelen tegen machtsmisbruik
+Maatregelen tegen machtsmisbruik            (Rami)
 6.1 Regulering en antitrustwetten
 6.2 Transparantie-eisen
 6.3 Alternatieve ticketverkoopkanalen
 6.4 Bewustwording en protest van consumenten
 
-Conclusie
+Conclusie                                   (Lode, en samen/tba)
 7.1 Samenvatting van bevindingen
 7.2 Toekomstige ontwikkelingen in de ticketverkoopindustrie
 7.3 Aanbevelingen voor verbeteringen in de sector
