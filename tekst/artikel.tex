@@ -1,26 +1,71 @@
-\documentclass[12pt, a4paper]{article}
-% Hierboven geven we aan dat we een artikel willen schrijven in A4 formaat, met algemene lettergrootte van 12pt.
+\documentclass[a4paper,10pt]{article}
 
-%%% Voeg hieronder nieuwe packages toe %%%
-
-% We schrijven een Nederlandstalige tekst, dus we gebruiken het babel-taalpakket voor 'dutch'.
 \usepackage[dutch]{babel}
-
-% Vul hier de titel van je artikel in.
-\title{Ticketsystemen}
-% Vul hieronder de namen van alle groepsleden in door gebruik te maken van het \author{} commando.
-% Let er op dat je de namen scheidt door middel van '\and' in plaats van een komma!
-% Bijvoorbeeld: \author{naam1 \and naam2 \and naam3}
-\author{Lode Dockx \and Florian Braun \and Thijs Creemers \and John Cai \and Sonia Amiri \and Rami Berro}
-\date{00/10/2023}
+\usepackage{graphicx}
+\usepackage[colorlinks, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+\usepackage{geometry}
+\geometry{tmargin=3cm, bmargin=2.2cm, lmargin=2.2cm, rmargin=2cm}
+\usepackage{todonotes} %Used for the figure placeholders
+\usepackage{ifthen}
 
 \begin{document}
+\newboolean{anonymize}
+% Uncomment to create an anonymized version of your report
+%\setboolean{anonymize}{true}
 
-	\begin{titlepage}
-		\maketitle
-	\end{titlepage}
+\begin{titlepage}
+    \newpage
+    \thispagestyle{empty}
+    \frenchspacing
+    \hspace{-0.2cm}
+    \includegraphics[height=3.4cm]{img/kul-logo.png}
+    \hspace{0.2cm}
+    \rule{0.5pt}{3.4cm}
+    \hspace{0.2cm}
+    \begin{minipage}[b]{8cm}
+        \Large{Katholieke\newline Universiteit\newline Leuven}\smallskip\newline
+        \large{}\smallskip\newline
+        \textbf{Department of\newline Computer Science}\smallskip
+    \end{minipage}
+    \hspace{\stretch{1}}
+    \vspace*{3.2cm}\vfill
+    \begin{center}
+        \begin{minipage}[t]{\textwidth}
+            \begin{center}
+                \LARGE{\rm{\textbf{\uppercase{Capaciteitsproblemen bij online ticketverkoop}}}}\\
+                \Large{\rm{Oorzaken, gevolgen en oplossingen}}
+            \end{center}
+        \end{minipage}
+    \end{center}
+    \vfill
+    \hfill\makebox[8.5cm][l]{
+        \vbox to 7cm{\vfill\noindent
+            \ifthenelse{\boolean{anonymize}}{
+                {\rm \textbf{Anonymized}}\\
+                {\rm Academiejaar 2023-2024}
+            }{
+                {\rm \textbf{Groep 2}}\\
+                {\rm {Lode Dockx}}\\
+                {\rm {Florian Braun}}\\
+                {\rm {Thijs Creemers}}\\
+                {\rm {John Cai}}\\
+                {\rm {Sonia Amiri}}\\
+                {\rm {Rami Berro}}\\
+                {\rm {Tom Cottem}}\\[2mm]
+                {\rm Academiejaar 2023-2024}
 
-    \bibliographystyle{plain}
-    \bibliography{referenties}
+            }
+        }
+    }
+\end{titlepage}
 
+\tableofcontents
+\newpage
+
+% \input{tex file here}
+% \newpage
+
+
+\bibliographystyle{plain}
+\bibliography{referenties.bib}
 \end{document}
