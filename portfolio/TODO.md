@@ -38,6 +38,11 @@ elke referentie moet verwezen worden in tekst)
     # LaTeX Workshop VSCode Plugin
     ```
 - Aantal woorden nagaan via `texcount`-commando
+    ```bash
+    # zorg ervoor dat texlive-extra-utils-package is geinstalleerd
+    texcount -inc artikel.tex
+    # kijk naar getal bij 'Words in text'
+    ```
 - Aantal referenties nagaan: 7 à 15 goede en diverse, 5 wetenschappelijk
 - Indien taal probleem lijkt, voor correcties door met
   [ILT Schrijfhulp](https://ilt.kuleuven.be/schrijfhulp/)
