@@ -1,4 +1,4 @@
-tekst/artikel.pdf
+tekst/*.pdf
 tekst/word_count.txt
 .vscode/
 
