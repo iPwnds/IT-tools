@@ -34,6 +34,8 @@ omtrent capaciteitsproblemen:
     - traffic / requests
     - overdemand
     - delays
+    - overflow (normaal geen term voor deze context)
+    - capacity
 
 Overblijvende potentieel goede concrete zoektermenen:
 - workload
