@@ -1,1 +1,6 @@
 - Toevoegen beschrijving van Rami in beschrijving/groepsleden
+- Updaten zoekcriteria
+- Updaten referenties
+- Updaten inhoudsopgave
+- Updaten onderzoeksvragen
+- Nagaan of verslagen in orde (notulist, projectleider, datum, uur)
