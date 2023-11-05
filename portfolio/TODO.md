@@ -41,4 +41,5 @@ elke referentie moet verwezen worden in tekst)
 - Aantal referenties nagaan: 7 à 15 goede en diverse, 5 wetenschappelijk
 - Indien taal probleem lijkt, voor correcties door met
   [ILT Schrijfhulp](https://ilt.kuleuven.be/schrijfhulp/)
+- Verduidelijken gebruik GAI in appendix.
 

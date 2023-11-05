@@ -18,3 +18,4 @@
   gebruikt in tekst zelf en wordt gebruikt in context
   (bv. op einde relevante zin(nen))
 - Bij voorker opsplisting tekst in verschillende .tex-files (`\input`)
+- Appendix met toelichting over gebruik GAI
