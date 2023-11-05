@@ -26,14 +26,17 @@
 \usepackage{todonotes}
 \usepackage{ifthen}
 
+% Zelf toegevoegde packages.
+\usepackage{verbatim} % Voor gebruik van multi-line comments.
+
 \begin{document}
 
 % Voor geanonimiseerd rapport te maken (onderdeel template, irrelevant).
 \newboolean{anonymize}
 % Onderstaande niet uncommenten, anders geanonimiseerd rapport.
-%\setboolean{anonymize}{true}
+% \setboolean{anonymize}{true}
 
-% Template titlepage
+% Template titlepage.
 \begin{titlepage}
     \newpage
     \thispagestyle{empty}
@@ -85,6 +88,32 @@
 \newpage
 
 % Invoeging secties uit aparte bestanden.
+\input{onderdelen/0_intro_tom.tex}
+\newpage
+\input{onderdelen/1_ticketsys-alg_sonia.tex}
+\newpage
+\input{onderdelen/2_prob-ticketsys-spec_lode.tex}
+\newpage
+\input{onderdelen/3_capaciteitsprob_tom.tex}
+\newpage
+\input{onderdelen/4_belangen-bedrijven_john.tex}
+\newpage
+\input{onderdelen/5_belangen-klanten_thijs.tex}
+\newpage
+\input{onderdelen/6_machtsmisbruik_florian.tex}
+\newpage
+\input{onderdelen/7_maatregelen_rami.tex}
+\newpage
+\input{onderdelen/8_conclusie_lode.tex}
+\newpage
+\input{onderdelen/9_appendix-gai.tex}
+\newpage
+
+% Dit moet verwijderd worden en verplaats worden naar de aparte besetanden.
+% Door het comment-commando uit verbatim-package verschijnt dit niet
+% meer in de gecompileerde tekst.
+
+\begin{comment}
 
 \section{Problemen met ticketsystemen}
 % ... < Text >
@@ -126,8 +155,7 @@
 \subsection{Toekomstige ontwikkelingen in de ticketverkoopindustrie}
 \subsection{Aanbevelingen voor verbeteringen in de sector}
 
-% \input{tex file here}
-% \newpage
+\end{comment}
 
 % Bibliografie.
 \bibliographystyle{plain}
