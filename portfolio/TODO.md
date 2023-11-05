@@ -2,8 +2,6 @@
 
 - Updaten zoekcriteria
 - Updaten referenties
-- Updaten inhoudsopgave
-- Updaten onderzoeksvragen
 - Nagaan of tex-bestand compileerbaar
     ```bash
     # optie 1
