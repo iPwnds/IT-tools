@@ -1,3 +1,6 @@
+Notities
+========
+
 Machtsmisbruik door grote spelers:
 
 GenAI (Gebruikt voor het vinden van bulletpoints):
@@ -63,3 +66,43 @@ Verwijs naar:
     Ze kunnen deze gegevens misbruiken om concurrenten te belemmeren of om prijzen en voorwaarden aan te passen ten nadele van consumenten.
 
     Dit is een voorbeeld van machtsmisbruik door een monopolist.
+
+
+Tekstdraft
+==========
+
+GenAI:
+    Machtsmisbruik door grote spelers in het domein van ticketsystemen is een probleem dat zich regelmatig voordoet. 
+    Een recent voorbeeld hiervan is de verkoop van tickets voor de concerten van Taylor Swift. 
+    Miljoenen mensen probeerden tegelijkertijd via Ticketmaster tickets te kopen, 
+    waardoor de website haperde en mensen uren moesten wachten in een digitale wachtrij. 
+    Op een bepaald moment besliste Ticketmaster zelfs om de openbare verkoop voor het grote publiek af te gelasten. 
+    Dit leidde tot veel frustratie bij de fans van Taylor Swift en tot beschuldigingen van machtsmisbruik door Ticketmaster.
+    
+    Ticketsystemen hebben een grote verantwoordelijkheid bij het oplossen van capaciteitsproblemen, 
+    maar tegelijkertijd hebben ze ook veel macht. 
+    Ze kunnen bijvoorbeeld beslissen om de verkoop van tickets te beperken tot bepaalde groepen of om de prijzen van tickets te verhogen. 
+    Dit kan leiden tot ongelijke toegang tot evenementen en tot hogere prijzen voor consumenten.
+    
+    Er zijn verschillende manieren waarop dergelijke bedrijven capaciteitsproblemen kunnen oplossen. 
+    Ze kunnen bijvoorbeeld investeren in betere technologieën en infrastructuur, 
+    of ze kunnen de verkoop van tickets spreiden over een langere periode. 
+    Het is echter belangrijk dat deze oplossingen niet leiden tot nog meer machtsconcentratie bij de grote spelers in het domein van ticketsystemen.
+    
+    Er zijn voor- en nadelen verbonden aan enkele grote spelers in het domein van ticketsystemen. 
+    Enerzijds hebben ze vaak veel ervaring en expertise opgebouwd, 
+    waardoor ze in staat zijn om complexe problemen op te lossen. 
+    Anderzijds kunnen ze ook een monopoliepositie innemen en hun macht misbruiken om de concurrentie uit te schakelen.
+    
+    Het misbruiken van macht door grote spelers in het domein van ticketsystemen kan op verschillende manieren gebeuren. 
+    Ze kunnen bijvoorbeeld exclusieve deals sluiten met evenementenorganisatoren, 
+    waardoor andere spelers uit de markt worden gedrukt. 
+    Ook kunnen ze de prijzen van tickets kunstmatig hoog houden door schaarste te creëren. 
+    Om dit tegen te gaan, 
+    is het belangrijk dat er voldoende concurrentie is in de markt en dat er regelgeving is die machtsmisbruik tegengaat.
+    
+    In conclusie, 
+    machtsmisbruik door grote spelers in het domein van ticketsystemen is een probleem dat aangepakt moet worden. 
+    Bedrijven moeten investeren in betere technologieën en infrastructuur om capaciteitsproblemen op te lossen, 
+    maar dit mag niet leiden tot nog meer machtsconcentratie bij de grote spelers. 
+    Er moet voldoende concurrentie zijn in de markt en er moet regelgeving zijn die machtsmisbruik tegengaat.
