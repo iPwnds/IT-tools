@@ -1,7 +1,6 @@
 tekst/*.pdf
 tekst/word_count.txt
 .vscode/
-notes.md
 
 # Created by https://www.gitignore.io/api/latex,linux,macos
 # Edit at https://www.gitignore.io/?templates=latex,linux,macos

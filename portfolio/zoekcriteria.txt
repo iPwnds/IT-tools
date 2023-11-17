@@ -1,4 +1,8 @@
-Zoekcriteria:
+Zoekcriteria
+============
+
+Versie 1
+---------
 
 - digital ticket system concert
 - What ticketing system does ticketmaster use?
@@ -9,3 +13,35 @@ Zoekcriteria:
 - What ticketing system does ticketmaster use?
 - What advantages do big events have when using a digital ticket system?
 
+Versie 2
+---------
+
+Losse zoektermen gebruikt in Google om meest gangbare termen te vinden
+omtrent capaciteitsproblemen:
+- computer science AND server AND {concrete zoekterm}
+- concrete zoektermen:
+    - workload
+    - overload
+    - scaling / scaliabiliy
+    - downtime
+    - disruptions
+    - crash
+    - request processing
+    - outage
+    - load / load balancing / load distribution
+    - oversaturation
+    - dos (denial-of-service attack)
+    - traffic / requests
+    - overdemand
+    - delays
+    - overflow (normaal geen term voor deze context)
+    - capacity
+
+Overblijvende potentieel goede concrete zoektermenen:
+- workload
+- overload
+- scaling / scaliabiliy
+- downtime
+- disruptions
+- load / load balancing / load distribution
+- dos (denial-of-service attack)

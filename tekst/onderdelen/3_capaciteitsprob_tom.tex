@@ -5,3 +5,47 @@
 % de vorige sectie of hoe het past in het grotere geheel.
 
 \section{Capaciteitsproblemen bij overbevraging online diensten}
+
+Bij capaciteitsproblemen zijn de beschikbare 'system resources'
+niet in staat om de inkomende 'requests' van gebuikers af te handelen.
+Dit kan ertoe leiden dat de systemen traag, slecht (bv. site of applicatie wordt niet correct
+weergegeven) of niet (bv. HTTP error codes) functioneren.
+Het probleem kan zich constant voordoen, doordat de infrastructuur slecht
+functioneert of onvoldoende resources heeft om aan de normale
+vraag tegemoet te komen. Anderzijds kan het ook een tijdelijk gegeven zijn,
+veroorzaakt door de inadequate flexibiliteit van de systemen om
+te reageren op piekbelasting. \newline
+
+Mogelijke oplossing van capaciteitsproblemen zijn de volgende:
+
+\begin{itemize}
+    \item Verticaal scalen: upgraden van de hardware van de huidige
+    servers (bv. extra geheugen, betere processors, extra bandwijdte)
+    \item Horizontaal scalen: voorzien van extra servers, waarover het
+    verkeer kan worden verdeeld.
+    \item (Betere) load balancing: optimalisatie van de verdeling van het
+    verkeer over de verschillende servers (bv. gebruik van betere
+    algoritmen)
+    \item Hedendaagse DevOps-technieken: DevOps (development operations) kan
+    de flexibiliteit vergroten door het automatischeren van deployment/scaling,
+    gebruiksmonitoring ene systeemmanagement.
+    \item Gebruik van cloud providers: cloud providers beschikking over
+    veel infrastructuur voor (automatische) scaling.
+    \item Cachen: kan laattijden verminderen.
+    \item Geografisch distribueren: vertiaal gescaled servers voldoende
+    geografich verspreiden zodat gebrukers over hele wereld sneller
+    connectie kunnen maken.
+    \item Optialiseren broncode: indien de broncode van de software wordt
+    geoptimaliseerd zijn minder 'system resources' nodig voo dezelfde
+    taak.
+    \item Betere planning: prestatie-evaluaties kunnen helpen om noden in
+    te schatten, deze kunn ne gebruik maken van workload simulaties en
+    generatoren om goede evaluaties te maken en tijdig aanpassingen door
+    te voeren.
+    \item Optimalisatie van software-architectuur en -ontwerp:
+    bepaalde architecturen en ontwerpen zijn makkelijk te scalen (bv. micro-
+    services).
+\end{itemize}
+
+
+TODO: toevoegen referenties (uit notities halen)
