@@ -20,27 +20,22 @@ Het is duidelijk dat Ticketmaster een uitgebreid prijsmodel hanteert om winstmax
 
 
 2. Klanttevredenheid
-Het e-ticketconcept is aantrekkelijk voor zowel klanten als dienstverleners. Vanuit het perspectief van de klant biedt het 
-de volgende voordelen:
+Het e-ticketconcept is aantrekkelijk voor zowel klanten als dienstverleners. Vanuit het perspectief van de klant biedt het de volgende voordelen:
 
 A. Voordelen:
 Snellere en handigere verificatie van een ticket;
 De mogelijkheid om te profiteren van een flexibel tarievenschema, met mogelijke individuele kortingen en speciale aanbiedingen;
 Mogelijkheid tot intrekking van verloren tickets en hun vervanging;
-Geen noodzaak om contant geld bij zich te hebben, bijvoorbeeld voor een plaatselijke kaartjesautomaat. Dit is vooral handig 
-voor klanten die de vervoersdienst slechts af en toe gebruiken of zich in een andere stad bevinden.
+Geen noodzaak om contant geld bij zich te hebben, bijvoorbeeld voor een plaatselijke kaartjesautomaat. Dit is vooral handig voor klanten die de vervoersdienst slechts af en toe gebruiken of zich in een andere stad bevinden.
 
 B. Nadelen:
-Ondanks deze voordelen brengt het concept van e-ticketing ook enkele zorgen met zich mee, met name op het gebied van privacy. 
-Deze zorgen omvatten:
+Ondanks deze voordelen brengt het concept van e-ticketing ook enkele zorgen met zich mee, met name op het gebied van privacy. Deze zorgen omvatten:
 
 Alomtegenwoordige klantidentificatie;
 De mogelijkheid van klantprofilering, zoals het creëren van bewegingspatronen;
 Potentiële schending van de privacy door verhoogd toezicht, wat vaak wordt aangeduid als "Het Grote Broer"-probleem.
 
-Kortom, terwijl e-ticketing aanzienlijke voordelen biedt aan klanten, zijn er ook legitieme privacykwesties die moeten 
-worden overwogen en aangepakt in de implementatie van dit systeem. Het handhaven van een balans tussen klanttevredenheid 
-en privacybescherming is van cruciaal belang voor het succes van e-ticketingdiensten.
+Kortom, terwijl e-ticketing aanzienlijke voordelen biedt aan klanten, zijn er ook legitieme privacykwesties die moeten worden overwogen en aangepakt in de implementatie van dit systeem. Het handhaven van een balans tussen klanttevredenheid en privacybescherming is van cruciaal belang voor het succes van e-ticketingdiensten.
 
 3. Imago en merkreputatie
 In het streven naar winstmaximalisatie speelt het imago en de merkreputatie een essentiële rol voor bedrijven in de evenementenbranche, zoals Ticketmaster. Een positief imago en een sterke merkreputatie kunnen aanzienlijk bijdragen aan het succes en de winstgevendheid van een ticketbedrijf.
