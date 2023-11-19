@@ -1,1 +1,48 @@
-/* Schrijf hier je CSS */
+
+/* body styling */
+body{
+    background-color: #F3EEEA;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    color: #776B5D;
+    margin: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* table styling */
+table {
+    font-size: 1em;
+    background-color: #EBE3D5;
+    border-spacing: 0.5em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    margin: auto;
+}
+
+/* cells styling */
+td {
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    background-color: #B0A695;
+    color: #B0A695;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+/* colors */
+.colored {
+    background-color: #776B5D;
+    color: #776B5D;
+}
+
+.mine {
+    background-color: #B0A695;
+    color: #776B5D;
+    font-weight: bold;
+}
