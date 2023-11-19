@@ -264,6 +264,7 @@ function check(puzzle, solved) {
     }
     if (correct == true) {
         alert("Je hebt gewonnen! Je score is " + moves + "." + " Je tijd was " + time + ".");
+        reset();
     }
 }
 
