@@ -218,24 +218,24 @@ function changeR(puzzle, row, col) {
             reset();
         }
         else {
-            alert("Je hebt een mijn geraakt! Je hebt nog " + lives + " levens over.");
+            alert("Je hebt een mijn geraakt! Je hebt nog " + lives + " leven(s) over.");
         }
     }
 }
 
-//! LEFT OF HERE
+
 function row_check() {
     for (let r = 0; r < puzzle.length; r++) {
         for (let c = 0; c < puzzle[r].length; c++) {
-            if (puzzle[r][c] == 0) {
+            if (puzzle[r][c] != solved[r][c]) {
                 return false;
+            }
+            else {
+                return true;
             }
         }
     }
-    return true;
-
 }
-//! LEFT OF HERE
 
 function left_click_handler(cell) {
     let col = cell.cellIndex;
@@ -262,8 +262,7 @@ function check(puzzle, solved) {
             }
         }
     }
-    if (correct) {
-        //! timer(clearInterval());
+    if (correct == true) {
         alert("Je hebt gewonnen! Je score is " + moves + "." + " Je tijd was " + time + ".");
     }
 }
