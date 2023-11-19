@@ -224,18 +224,18 @@ function changeR(puzzle, row, col) {
 }
 
 
-function row_check() {
-    for (let r = 0; r < puzzle.length; r++) {
-        for (let c = 0; c < puzzle[r].length; c++) {
-            if (puzzle[r][c] != solved[r][c]) {
-                return false;
-            }
-            else {
-                return true;
-            }
-        }
-    }
-}
+// function row_check() {
+//     for (let r = 0; r < puzzle.length; r++) {
+//         for (let c = 0; c < puzzle[r].length; c++) {
+//             if (puzzle[r][c] != solved[r][c]) {
+//                 return false;
+//             }
+//             else {
+//                 return true;
+//             }
+//         }
+//     }
+// }
 
 function left_click_handler(cell) {
     let col = cell.cellIndex;
