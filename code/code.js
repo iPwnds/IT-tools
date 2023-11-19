@@ -15,16 +15,16 @@ let puzzle_easy = [['', '1', '2', '8', '3 6', '8', '10', '7', '2 5', '1 4', '3']
 
 //* solved easy
 let solved_easy = [['', '1', '2', '8', '3 6', '8', '10', '7', '2 5', '1 4', '3'],
-                   ['1 1', 0, 0, 0, 3, 0, 3, 0, 0, 0, 0],
-                   ['2 1 1 2', 3, 3, 0, 3, 0, 3, 0, 3, 3, 0],
-                   ['7', 0, 3, 3, 3, 3, 3, 3, 3, 0, 0],
-                   ['1 3', 0, 0, 3, 0, 3, 3, 3, 0, 0, 0],
-                   ['6', 0, 0, 3, 3, 3, 3, 3, 3, 0, 0],
-                   ['7', 0, 0, 3, 3, 3, 3, 3, 3, 3, 0],
-                   ['8', 0, 0, 3, 3, 3, 3, 3, 3, 3, 3],
-                   ['8', 0, 0, 3, 3, 3, 3, 3, 3, 3, 3],
-                   ['8', 0, 0, 3, 3, 3, 3, 3, 3, 3, 3],
-                   ['4', 0, 0, 3, 3, 3, 3, 0, 0, 0, 0]];
+                   ['1 1', 'X', 'X', 'X', 3, 'X', 3, 'X', 'X', 'X', 'X'],
+                   ['2 1 1 2', 3, 3, 'X', 3, 'X', 3, 'X', 3, 3, 'X'],
+                   ['7', 'X', 3, 3, 3, 3, 3, 3, 3, 'X', 'X'],
+                   ['1 3', 'X', 'X', 3, 'X', 3, 3, 3, 'X', 'X', 'X'],
+                   ['6', 'X', 'X', 3, 3, 3, 3, 3, 3, 'X', 'X'],
+                   ['7', 'X', 'X', 3, 3, 3, 3, 3, 3, 3, 'X'],
+                   ['8', 'X', 'X', 3, 3, 3, 3, 3, 3, 3, 3],
+                   ['8', 'X', 'X', 3, 3, 3, 3, 3, 3, 3, 3],
+                   ['8', 'X', 'X', 3, 3, 3, 3, 3, 3, 3, 3],
+                   ['4', 'X', 'X', 3, 3, 3, 3, 'X', 'X', 'X', 'X']];
 
 //* puzzle intermediate
 let puzzle_intermediate = [['', '4', '6', '3 2', '2 2', '2 3', '1 4', '2 4', '8', '6', '4'],
@@ -41,16 +41,16 @@ let puzzle_intermediate = [['', '4', '6', '3 2', '2 2', '2 3', '1 4', '2 4', '8'
 
 //* solved intermediate
 let solved_intermediate = [['', '4', '6', '3 2', '2 2', '2 3', '1 4', '2 4', '8', '6', '4'],
-                           ['1 1', 0, 0, 3, 0, 0, 0, 0, 3, 0, 0],
-                           ['3 3', 0, 3, 3, 3, 0, 0, 3, 3, 3, 0],
+                           ['1 1', 'X', 'X', 3, 'X', 'X', 'X', 'X', 3, 'X', 'X'],
+                           ['3 3', 'X', 3, 3, 3, 'X', 'X', 3, 3, 3, 'X'],
                            ['10', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
-                           ['2 1 3', 3, 3, 0, 0, 3, 0, 0, 3, 3, 3],
-                           ['2 3', 3, 3, 0, 0, 0, 0, 0, 3, 3, 3],
-                           ['2 4', 3, 3, 0, 0, 0, 0, 3, 3, 3, 3],
-                           ['2 4', 0, 3, 3, 0, 0, 3, 3, 3, 3, 0],
-                           ['6', 0, 0, 3, 3, 3, 3, 3, 3, 0, 0],
-                           ['4', 0, 0, 0, 3, 3, 3, 3, 0, 0, 0],
-                           ['2', 0, 0, 0, 0, 3, 3, 0, 0, 0, 0]];
+                           ['2 1 3', 3, 3, 'X', 'X', 3, 'X', 'X', 3, 3, 3],
+                           ['2 3', 3, 3, 'X', 'X', 'X', 'X', 'X', 3, 3, 3],
+                           ['2 4', 3, 3, 'X', 'X', 'X', 'X', 3, 3, 3, 3],
+                           ['2 4', 'X', 3, 3, 'X', 'X', 3, 3, 3, 3, 'X'],
+                           ['6', 'X', 'X', 3, 3, 3, 3, 3, 3, 'X', 'X'],
+                           ['4', 'X', 'X', 'X', 3, 3, 3, 3, 'X', 'X', 'X'],
+                           ['2', 'X', 'X', 'X', 'X', 3, 3, 'X', 'X', 'X', 'X']];
 
 //* puzzle hard
 let puzzle_hard = [['', '2', '1 1 3', '2 1 1 4', '1 1 6', '2 6', '4 6', '11 1', '4 7', '1 2 4 1 1', '1 1 1 1 2', '2 2 1', '1 6', '5', '2 3', '5'],
@@ -72,21 +72,21 @@ let puzzle_hard = [['', '2', '1 1 3', '2 1 1 4', '1 1 6', '2 6', '4 6', '11 1', 
 
 //* solved hard
 let solved_hard = [['', '2', '1 1 3', '2 1 1 4', '1 1 6', '2 6', '4 6', '11 1', '4 7', '1 2 4 1 1', '1 1 1 1 2', '2 2 1', '1 6', '5', '2 3', '5'],
-                   ['5', 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0],
-                   ['3 2', 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 3, 3, 0, 0, 0],
-                   ['5', 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0],
-                   ['6 1', 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 0, 0, 0, 3, 0],
-                   ['1 2 2', 0, 0, 3, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3],
-                   ['2 1 1 1 1', 0, 0, 3, 3, 0, 0, 3, 0, 3, 0, 0, 3, 0, 0, 3],
-                   ['1 1 4 2 1', 0, 3, 0, 0, 3, 0, 3, 3, 3, 3, 0, 3, 3, 0, 3],
-                   ['7 4', 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 3, 3],
-                   ['1 11', 0, 3, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
-                   ['6 4', 0, 0, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 3, 3, 0],
-                   ['6 2', 0, 0, 0, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 0, 0],
-                   ['6 1 1', 3, 3, 3, 3, 3, 3, 0, 3, 0, 3, 0, 0, 0, 0, 0],
-                   ['4 1 1 2', 3, 3, 3, 3, 0, 3, 0, 3, 0, 3, 3, 0, 0, 0, 0],
-                   ['3 1 1', 0, 3, 3, 3, 0, 0, 3, 0, 3, 0, 0, 0, 0, 0, 0],
-                   ['2', 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
+                   ['5', 'X', 'X', 'X', 'X', 'X', 'X', 3, 3, 3, 3, 3, 'X', 'X', 'X', 'X'],
+                   ['3 2', 'X', 'X', 'X', 'X', 'X', 3, 3, 3, 'X', 'X', 3, 3, 'X', 'X', 'X'],
+                   ['5', 'X', 'X', 'X', 'X', 3, 3, 3, 3, 3, 'X', 'X', 'X', 'X', 'X', 'X'],
+                   ['6 1', 'X', 'X', 'X', 'X', 3, 3, 3, 3, 3, 3, 'X', 'X', 'X', 3, 'X'],
+                   ['1 2 2', 'X', 'X', 3, 'X', 'X', 3, 3, 'X', 'X', 'X', 'X', 'X', 'X', 3, 3],
+                   ['2 1 1 1 1', 'X', 'X', 3, 3, 'X', 'X', 3, 'X', 3, 'X', 'X', 3, 'X', 'X', 3],
+                   ['1 1 4 2 1', 'X', 3, 'X', 'X', 3, 'X', 3, 3, 3, 3, 'X', 3, 3, 'X', 3],
+                   ['7 4', 'X', 'X', 3, 3, 3, 3, 3, 3, 3, 'X', 'X', 3, 3, 3, 3],
+                   ['1 11', 'X', 3, 'X', 'X', 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+                   ['6 4', 'X', 'X', 3, 3, 3, 3, 3, 3, 'X', 'X', 3, 3, 3, 3, 'X'],
+                   ['6 2', 'X', 'X', 'X', 3, 3, 3, 3, 3, 3, 'X', 'X', 3, 3, 'X', 'X'],
+                   ['6 1 1', 3, 3, 3, 3, 3, 3, 'X', 3, 'X', 3, 'X', 'X', 'X', 'X', 'X'],
+                   ['4 1 1 2', 3, 3, 3, 3, 'X', 3, 'X', 3, 'X', 3, 3, 'X', 'X', 'X', 'X'],
+                   ['3 1 1', 'X', 3, 3, 3, 'X', 'X', 3, 'X', 3, 'X', 'X', 'X', 'X', 'X', 'X'],
+                   ['2', 'X', 'X', 3, 3, 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X']];
 
 //* puzzle trivial
 let puzzle_trivial = [['', '2', '3', '2 1', '2 1', '1 1'],
@@ -98,20 +98,24 @@ let puzzle_trivial = [['', '2', '3', '2 1', '2 1', '1 1'],
 
 //* solevd trivial
 let solved_trivial = [['', '2', '3', '2 1', '2 1', '1 1'],
-                      ['2', 0, 0, 0, 3, 3],
-                      ['2', 0, 0, 3, 3, 0],
-                      ['2', 0, 3, 3, 0, 0],
-                      ['2', 3, 3, 0, 0, 0],
+                      ['2', 'X', 'X', 'X', 3, 3],
+                      ['2', 'X', 'X', 3, 3, 'X'],
+                      ['2', 'X', 3, 3, 'X', 'X'],
+                      ['2', 3, 3, 'X', 'X', 'X'],
                       ['5', 3, 3, 3, 3, 3]];
 
 //* aantal levens
 let lives = 3;
+let moves = 0;
+let time = '';
+
 
 //! functies
 
 window.onload = function(){
     select();
-    draw(puzzle);
+    draw();
+    timer();
 }
 
 function select() {
@@ -134,12 +138,14 @@ function select() {
     }
     else {
         alert("Dit level bestaat niet!");
+        reset();
     }
 }
 
-function draw(puzzle) {
-    let puzzleHTML = generate(puzzle);
-    document.getElementById("puzzle").innerHTML = puzzleHTML;
+function draw() {
+    document.getElementById("puzzle").innerHTML = generate(puzzle);
+    document.getElementById("score").innerHTML = moves;
+    document.getElementById("health").innerHTML = lives;
 }
 
 function generate(puzzle) {
@@ -153,21 +159,21 @@ function generate(puzzle) {
             let i = 0;
             let j = 0;
             if (typeof puzzle[r][c] == "number" && puzzle[r][c] == 3) {
-                row += "<td class='hidden' onclick='square_click_handler(this)'>";
+                row += "<td class='hidden' onclick='left_click_handler(this)' oncontextmenu='right_click_handler(this)'>";
             }
             else if (puzzle[r][c] == 'X') {
-                row += "<td class='visible' onclick='square_click_handler(this)'>";
+                row += "<td class='visible' onclick='left_click_handler(this)' oncontextmenu='right_click_handler(this)'>";
             }
             else if (i < puzzle[r][0].length && typeof puzzle[r][c] == "string") {
-                row += "<td class='visible vertical' onclick='square_click_handler(this)'>";
+                row += "<td class='visible vertical'>";
                 i++;
             }
             else if (j < puzzle[0][c].length && typeof puzzle[r][c] == "string") {
-                row += "<td class='visible horizontal' onclick='square_click_handler(this)'>";
+                row += "<td class='visible horizontal'>";
                 j++;
             }
             else {
-                row += "<td onclick='square_click_handler(this)'>";
+                row += "<td onclick='left_click_handler(this)' oncontextmenu='right_click_handler(this)'>";
             }
             row += puzzle[r][c];
             row += "</td>";
@@ -179,12 +185,14 @@ function generate(puzzle) {
     return `${nonogram}<table>${table}</table>`;
 }
 
-function change(puzzle, row, col) {
-    if (puzzle[row][col] == 1) {
+function changeL(puzzle, row, col) {
+    if (puzzle[row][col] == 1 && typeof puzzle[row][col] == "number") {
         puzzle[row][col] = 3;
+        moves += 1;
     }
-    else if (puzzle[row][col] == 0) {
+    else if (puzzle[row][col] == 0 && typeof puzzle[row][col] == "number") {
         puzzle[row][col] = 'X';
+        moves += 1;
         lives -= 1;
         if (lives == 0) {
             alert("Game over!");
@@ -196,16 +204,53 @@ function change(puzzle, row, col) {
     }
 }
 
-function square_click_handler(cell) {
+function changeR(puzzle, row, col) {
+    if (puzzle[row][col] == 0 && typeof puzzle[row][col] == "number") {
+        puzzle[row][col] = 'X';
+        moves += 1;
+    }
+    else if (puzzle[row][col] == 1 && typeof puzzle[row][col] == "number") {
+        puzzle[row][col] = 3;
+        moves += 1;
+        lives -= 1;
+        if (lives == 0) {
+            alert("Game over!");
+            reset();
+        }
+        else {
+            alert("Je hebt een mijn geraakt! Je hebt nog " + lives + " levens over.");
+        }
+    }
+}
+
+//! LEFT OF HERE
+function row_check() {
+    for (let r = 0; r < puzzle.length; r++) {
+        for (let c = 0; c < puzzle[r].length; c++) {
+            if (puzzle[r][c] == 0) {
+                return false;
+            }
+        }
+    }
+    return true;
+
+}
+//! LEFT OF HERE
+
+function left_click_handler(cell) {
     let col = cell.cellIndex;
     let row = cell.parentNode.rowIndex;
-    change(puzzle, row, col);
+    changeL(puzzle, row, col);
     draw(puzzle);
     check(puzzle, solved);
 }
 
-function reset() {
-    location.reload();
+function right_click_handler(cell) {
+    let col = cell.cellIndex;
+    let row = cell.parentNode.rowIndex;
+    changeR(puzzle, row, col);
+    draw(puzzle);
+    check(puzzle, solved);
 }
 
 function check(puzzle, solved) {
@@ -218,6 +263,30 @@ function check(puzzle, solved) {
         }
     }
     if (correct) {
-        alert("Je hebt gewonnen!");
+        //! timer(clearInterval());
+        alert("Je hebt gewonnen! Je score is " + moves + "." + " Je tijd was " + time + ".");
     }
+}
+
+function timer() {
+    let milliseconds = 0;
+    let seconds = 0;
+    let minutes = 0;
+    setInterval(function() {
+        milliseconds += 1;
+        if (milliseconds >= 100) {
+            milliseconds = 0;
+            seconds += 1;
+        }
+        else if (seconds >= 60) {
+            seconds = 0;
+            minutes += 1;
+        }
+        time = minutes + ":" + seconds + ":" + milliseconds;
+        document.getElementById("time").innerHTML = time;
+    }, 10) 
+}
+
+function reset() {
+    location.reload();
 }

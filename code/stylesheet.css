@@ -1,10 +1,10 @@
-
 /* body styling */
 body{
     background-color: #F3EEEA;
     font-family: 'Roboto', sans-serif;
 }
 
+/* text styling */
 h1{
     text-align: center;
     font-size: 2em;
@@ -22,6 +22,7 @@ table {
     font-weight: bold;
     border-radius: 0.5em;
     margin: auto;
+    cursor: default;
 }
 
 /* cells styling */
@@ -47,6 +48,12 @@ td {
     font-weight: bold;
 }
 
+.default {
+    background-color: #EBE3D5;
+    color: #EBE3D5;
+}
+
+/* sizing */
 .vertical {
     width: 4em;
 }
@@ -54,3 +61,12 @@ td {
 .horizontal {
     height: 4em;
 }
+
+/* ! TO DO */
+.items {
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0.5em;
+    cursor: default;
+}
+/* ! TO DO */
