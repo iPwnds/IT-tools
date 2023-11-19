@@ -36,13 +36,21 @@ td {
 }
 
 /* colors */
-.colored {
+.hidden {
     background-color: #776B5D;
     color: #776B5D;
 }
 
-.mine {
+.visible {
     background-color: #B0A695;
     color: #776B5D;
     font-weight: bold;
+}
+
+.vertical {
+    width: 4em;
+}
+
+.horizontal {
+    height: 4em;
 }
