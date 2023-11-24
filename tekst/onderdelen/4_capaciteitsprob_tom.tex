@@ -11,48 +11,77 @@ door capaciteitstekort en oplossingen daarvoor te bespreken. Aangezien dit
 een algemene IT-problematiek is, die zich voordoet in andere bedrijven en
 sectoren, wordt dit algemeen behandeld. 
 
-% minder engelse woorden 
+Om een online dienst of website te gebruiken, moeten gebruikers de
+server(s) van die dienst of website bereiken. In die context is er sprake van
+capaciteitstekort wanneer de serverinfrastructuur onvoldoende systeemresources
+heeft om alle inkomende verzoeken van gebruikers af te handelen.
+Dat kan ertoe leiden dat systemen trager zijn (bv. lange laattijd website),
+slecht functioneren (bv. slechte weergave van site/applicatie) of
+helemaal niet meer werken (bv. foutmeldingen zoals HTTP-statuscode 503
+\footnote{Deze statuscode geeft aan dat de dienst niet beschikbaar is}).
+Het probleem kan zich continu voordoen, wanneer de infrastrctuur onvoldoende
+is om aan de normale vraag tegemoet te komen,
+of van tijdelijke aard zijn, wanneer de flexibiliteit ontbreekt om
+belastingspieken op te vangen.
 
-Bij capaciteitsproblemen zijn de beschikbare 'system resources'
-niet in staat om de inkomende 'requests' van gebuikers af te handelen.
-Dit kan ertoe leiden dat de systemen traag, slecht (bv. site of applicatie wordt niet correct
-weergegeven) of niet (bv. HTTP error codes) functioneren.
-Het probleem kan zich constant voordoen, doordat de infrastructuur slecht
-functioneert of onvoldoende capaciteit heeft om aan de normale
-vraag tegemoet te komen. Anderzijds kan het ook een tijdelijk gegeven zijn,
-veroorzaakt door de inadequate flexibiliteit van de systemen om
-te reageren op piekbelasting. \newline
+\newlinechar
 
-Mogelijke oplossingen van capaciteitsproblemen zijn de volgende:
+Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
 
 \begin{itemize}
-    \item Verticaal opschalen: upgraden van de hardware van de huidige
-    servers (bv. extra geheugen, betere processors, extra bandwijdte)
-    \item Horizontaal opschalen: voorzien van extra servers, waarover het
-    verkeer kan worden verdeeld
-    \item (Betere) load balancing: optimalisatie van de verdeling van het
-    verkeer over de verschillende servers (bv. gebruik van betere
-    algoritmen)
-    \item Hedendaagse DevOps-technieken: DevOps (development operations) kan
-    de flexibiliteit vergroten door het automatischeren van deployment/scaling,
-    gebruiksmonitoring ene systeemmanagement.
-    \item Gebruik van cloud providers: cloud providers beschikking over
-    veel infrastructuur voor (automatische) scaling.
+    \item Verticaal opschalen: opwaarderen hardware huidige server(s)
+    (bv. extra geheugen, betere processors of extra bandbreedte)
+
+    \item Horizontaal opschalen: voorzien van extra servers,
+    waarover de verzoeken kunnen worden verdeeld
+
+    \item Geografisch distribueren: horizontaal opschalen
+    waarbij gewerkt wordt met geografisch verspreidde servers
+    zodat gebruikers dichtsbijzijnde server voor hun locatie kunnen gebruiken
+    met oog op snellere connectie
+
+    \item Kwalitatief load balancen: optimaliseren van de algoritmen die
+    de verzoeken over de verschillende servers verdelen
+    % Notitie: maakt gebruik van virtuele server die verzoeken verdeelt
+
+    \item Automatiseren infrastructuurbeheer en goed monitoren: vergroten
+    flexibiliteit en reactiviteit door automatiseren van opschaling en
+    configuratie infrastructuur en door extensieve monitoring van belasting
+    % Notitie: Staat doorgaans centraal in DevOps.
+    % Zie bron Microsoft Azure.
+    % Configuratiebeheer, gebruik van hulpprogramma's of IaC
+    % om van configuratie sjablonen te maken zodat configuratie
+    % kan worden geautomatiseerd en complexe omgeving makkelijk kan worden
+    % opgeschaald (systeemresources definiëren in code om snel, herhaalbaar en
+    % controleerbaar te implementeren zonder menselijke fouten. Ook idee
+    % bewakingm waarbij men focust op real-time zichtbaarheid prestaties en
+    % status infrastructuur (telemetrie. metadata en automatische meldingen
+    % voor operatoren).
+    
+    \item Gebruikken cloudproviders: (automatisch) opschalen vereenvoudigen
+    door gebruiken van cloudinfrastructuur.
+    % Notitie: Staat doorgaans ook centraal in DevOps.
+    % Zie opnieuwe bron Microsoft Azure.  
+    % Cloud biedt flexibiliteit waarbij je snel omgevingen in verschillende
+    % geografische locaties kunt opstarten, configureren en weer afsluiten
+    % afhankelijk van noden.
+
+    \item Prestaties evalueren en simuleren: (toekomstige) noden infrastructuur
+    inschatten door evalueren prestaties infrastructuur, inclusief
+    stress testen prestaties bij gesimuleerde, zelf gegenereerde
+    workloads 
+
     \item Cachen: kan laattijden verminderen.
-    \item Geografisch distribueren: vertiaal gescaled servers voldoende
-    geografich verspreiden zodat gebrukers over hele wereld sneller
-    connectie kunnen maken.
-    \item Optialiseren broncode: indien de broncode van de software wordt
-    geoptimaliseerd zijn minder 'system resources' nodig voo dezelfde
-    taak.
-    \item Betere planning: prestatie-evaluaties kunnen helpen om noden in
-    te schatten, deze kunn ne gebruik maken van workload simulaties en
-    generatoren om goede evaluaties te maken en tijdig aanpassingen door
-    te voeren.
-    \item Optimalisatie van software-architectuur en -ontwerp:
-    bepaalde architecturen en ontwerpen zijn makkelijk te scalen (bv. micro-
-    services).
+
+    \item Optimaliseren broncode: optimaliseren van de code van de software
+    vermindert de systeemresources die de servers beschikbaar moeten hebben
+
+    \item Optimaliseren software-architectuur en -ontwerp: vereenvoudigen van
+    opschaling door gebruik van flexibileren architecturen en ontwerpen 
+    (bv. micro-services)
+
 \end{itemize}
 
 
-TODO: toevoegen referenties (uit notities halen)
+% TODO: Misschien nog behandelen: welke technieken gebruikt Ticketmaster al?
+% TODO: Referenties
