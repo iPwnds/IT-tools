@@ -26,19 +26,19 @@ belastingspieken op te vangen.
 
 Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
 
-\begin{itemize}
-    \item Verticaal opschalen: opwaarderen hardware huidige server(s)
+\begin{description}
+    \item [Verticaal opschalen:] opwaarderen hardware huidige server(s)
     (bv. extra geheugen, betere processors of extra bandbreedte)
 
-    \item Horizontaal opschalen: voorzien van extra servers,
+    \item [Horizontaal opschalen:] voorzien van extra servers,
     waarover de verzoeken kunnen worden verdeeld
 
-    \item Geografisch distribueren: horizontaal opschalen
+    \item [Geografisch distribueren:] horizontaal opschalen
     waarbij gewerkt wordt met geografisch verspreidde servers
     zodat gebruikers dichtsbijzijnde server voor hun locatie kunnen gebruiken
     met oog op snellere connectie
 
-    \item Kwalitatief load balancen: optimaliseren van de algoritmen die
+    \item [Kwalitatief load balancen:] optimaliseren van de algoritmen die
     de verzoeken over de verschillende servers verdelen
     % Notitie:
     % Zie bron AWS "What is load balancing?"
@@ -59,7 +59,7 @@ Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
     % waarbij het rekening houdt met status van de severs
     % (bv. herleiden naar server die minst wordt gebruikt)
 
-    \item Automatiseren infrastructuurbeheer en goed monitoren: vergroten
+    \item [Automatiseren infrastructuurbeheer en goed monitoren:] vergroten
     flexibiliteit en reactiviteit door automatiseren van opschaling en
     configuratie infrastructuur en door extensieve monitoring van belasting
     % Notitie: Staat doorgaans centraal in DevOps.
@@ -73,7 +73,7 @@ Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
     % status infrastructuur (telemetrie. metadata en automatische meldingen
     % voor operatoren).
     
-    \item Gebruikken cloudproviders: (automatisch) opschalen vereenvoudigen
+    \item [Gebruikken cloudproviders:] (automatisch) opschalen vereenvoudigen
     door gebruiken van cloudinfrastructuur.
     % Notitie: Staat doorgaans ook centraal in DevOps.
     % Zie opnieuwe bron Microsoft Azure.  
@@ -81,12 +81,12 @@ Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
     % geografische locaties kunt opstarten, configureren en weer afsluiten
     % afhankelijk van noden.
 
-    \item Prestaties evalueren en simuleren: (toekomstige) noden infrastructuur
+    \item [Prestaties evalueren en simuleren:] (toekomstige) noden infrastructuur
     inschatten door evalueren prestaties infrastructuur, inclusief
     stress testen prestaties bij gesimuleerde, zelf gegenereerde
     werklasten 
 
-    \item Cachen: kan laattijden verminderen.
+    \item [Cachen:] kan laattijden verminderen.
     % Notitie:
     % Zie bron AWS over caching.
     % Zorgt ervoor dat toekomstige verzoeken voor bepaalde data, sneller kunnen
@@ -105,10 +105,10 @@ Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
     % Van belang hier is server-side caching. Zaken zoals web proxy, https
     % hedaders, web accelartors, stored key/value pairs, database buffers.
 
-    \item Optimaliseren broncode: optimaliseren van de code van de software
+    \item [Optimaliseren broncode:] optimaliseren van de code van de software
     vermindert de systeemresources die de servers beschikbaar moeten hebben
 
-    \item Optimaliseren software-architectuur en -ontwerp: vereenvoudigen van
+    \item [Optimaliseren software-architectuur en -ontwerp:] vereenvoudigen van
     opschaling door gebruik van flexibileren architecturen en ontwerpen 
     (bv. micro-services)
     % Notitie:
@@ -119,7 +119,7 @@ Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
     % geconfonrteerd dan kan enkel dat worden opgeschaald. Zorgt voor
     % lagere kost.
 
-\end{itemize}
+\end{description}
 
 
 % TODO: Misschien nog behandelen: welke technieken gebruikt Ticketmaster al?
