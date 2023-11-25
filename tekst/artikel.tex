@@ -18,7 +18,8 @@
 % Packages gebruikt door LaTeX-template KUL.
 \usepackage[dutch]{babel}
 \usepackage{graphicx}
-\usepackage[colorlinks, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks, linkcolor=black, citecolor=black, urlcolor=black, breaklinks]{hyperref}
 \usepackage{geometry}
 \geometry{tmargin=3cm, bmargin=2.2cm, lmargin=2.2cm, rmargin=2cm}
 % Change marginparwidth to prevent issues with todonotes.
@@ -47,7 +48,8 @@
     \rule{0.5pt}{3.4cm}
     \hspace{0.2cm}
     \begin{minipage}[b]{8cm}
-        \Large{Katholieke\newline Universiteit\newline Leuven}\smallskip\newline
+        \Large{Katholieke\newline Universiteit\newline Leuven}\smallskip
+        \newline
         \large{}\smallskip\newline
         \textbf{Departement\newline Computerwetenschappen}\smallskip
     \end{minipage}
@@ -110,6 +112,8 @@
 \newpage
 
 % Bibliografie.
+\begin{flushleft}
 \bibliographystyle{plain}
 \bibliography{referenties.bib}
+\end{flushleft}
 \end{document}
