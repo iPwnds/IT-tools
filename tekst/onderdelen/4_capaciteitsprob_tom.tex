@@ -26,7 +26,8 @@ is om aan de normale vraag tegemoet te komen,
 of van tijdelijke aard zijn, wanneer belastingspieken niet kunnen worden
 opgevangen \cite{schroeder2006web}.
 
-Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
+Verschillende technieken kunnen capaciteitsproblemen verminderen of
+verhelpen. Hieronder worden de voornaamste vermeld (niet-exhaustief):
 
 \begin{description}
     \item [Verticaal opschalen:] opwaarderen hardware huidige server(s)
@@ -35,6 +36,49 @@ Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
     \item [Horizontaal opschalen:] voorzien van extra servers,
     waarover de verzoeken kunnen worden verdeeld
 
+    \item [Prestaties evalueren en simuleren:] (toekomstige) noden infrastructuur
+    inschatten door evalueren prestaties infrastructuur, inclusief
+    stress testen prestaties bij gesimuleerde, zelf gegenereerde
+    werklasten 
+
+    \item [Cachen:] kan laattijden verminderen.
+    % Notitie:
+    % Zie bron AWS over caching.
+    % Zorgt ervoor dat toekomstige verzoeken voor bepaalde data, sneller kunnen
+    % worden behandeld, doordat high-speed cache wordt geraadpleegd (gebruik
+    % van fast access hardware zoals RAM) in plaats van de primaire opslag
+    % van de server(s). Idee van hoge IOPS. 
+    % Gaat daarbij om subset data die vaak nodig is /
+    % geraadpleegd wordt. Als je cache niet implenteert zou je volledige
+    % database op de standaard hardware moeten opschalen, wat meer kost dan
+    % efficiënte caching. De cache vermindert de load op de backend door
+    % ze te verplaatsen naar de cache, die sneller is.
+    % Cached data kan volgende zijn: resultaten database queries, intensieve
+    % berekeningen, API requests/responses, web artefacten (HTML, js,
+    % afbeeldingen). Best focust op belangrijkste subset bv. indien ticket
+    % voor bepaalde artiest populair, dan vooral die data cachen.
+    % Van belang hier is server-side caching. Zaken zoals web proxy, https
+    % hedaders, web accelartors, stored key/value pairs, database buffers.
+
+    \item [Optimaliseren broncode:] optimaliseren van de code van de software
+    vermindert de systeemresources die de servers beschikbaar moeten hebben
+
+    \item [Optimaliseren software-architectuur en -ontwerp:] vereenvoudigen van
+    opschaling door gebruik van flexibileren architecturen en ontwerpen 
+    (bv. micro-services)
+    % Notitie:
+    % Zie bron AWS over microservices.
+    % Benadering waarbij software bestaat uit kleine onafhankelijke services
+    % die communiceren via APIs. Opschalen wordt makkelijker in vergelijking
+    % met monolitsche architectuur. Als één proces met hoge traffiek wordt
+    % geconfonrteerd dan kan enkel dat worden opgeschaald. Zorgt voor
+    % lagere kost.
+\end{description}
+
+Specifiek voor horizontaal schalen, is de manier van implementatie van groot
+belangen. Ook hier kunnen bepaalde technieken helpen:
+
+\begin{description}
     \item [Geografisch distribueren:] horizontaal opschalen
     waarbij gewerkt wordt met geografisch verspreidde servers
     zodat gebruikers dichtsbijzijnde server voor hun locatie kunnen gebruiken
@@ -82,45 +126,6 @@ Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
     % Cloud biedt flexibiliteit waarbij je snel omgevingen in verschillende
     % geografische locaties kunt opstarten, configureren en weer afsluiten
     % afhankelijk van noden.
-
-    \item [Prestaties evalueren en simuleren:] (toekomstige) noden infrastructuur
-    inschatten door evalueren prestaties infrastructuur, inclusief
-    stress testen prestaties bij gesimuleerde, zelf gegenereerde
-    werklasten 
-
-    \item [Cachen:] kan laattijden verminderen.
-    % Notitie:
-    % Zie bron AWS over caching.
-    % Zorgt ervoor dat toekomstige verzoeken voor bepaalde data, sneller kunnen
-    % worden behandeld, doordat high-speed cache wordt geraadpleegd (gebruik
-    % van fast access hardware zoals RAM) in plaats van de primaire opslag
-    % van de server(s). Idee van hoge IOPS. 
-    % Gaat daarbij om subset data die vaak nodig is /
-    % geraadpleegd wordt. Als je cache niet implenteert zou je volledige
-    % database op de standaard hardware moeten opschalen, wat meer kost dan
-    % efficiënte caching. De cache vermindert de load op de backend door
-    % ze te verplaatsen naar de cache, die sneller is.
-    % Cached data kan volgende zijn: resultaten database queries, intensieve
-    % berekeningen, API requests/responses, web artefacten (HTML, js,
-    % afbeeldingen). Best focust op belangrijkste subset bv. indien ticket
-    % voor bepaalde artiest populair, dan vooral die data cachen.
-    % Van belang hier is server-side caching. Zaken zoals web proxy, https
-    % hedaders, web accelartors, stored key/value pairs, database buffers.
-
-    \item [Optimaliseren broncode:] optimaliseren van de code van de software
-    vermindert de systeemresources die de servers beschikbaar moeten hebben
-
-    \item [Optimaliseren software-architectuur en -ontwerp:] vereenvoudigen van
-    opschaling door gebruik van flexibileren architecturen en ontwerpen 
-    (bv. micro-services)
-    % Notitie:
-    % Zie bron AWS over microservices.
-    % Benadering waarbij software bestaat uit kleine onafhankelijke services
-    % die communiceren via APIs. Opschalen wordt makkelijker in vergelijking
-    % met monolitsche architectuur. Als één proces met hoge traffiek wordt
-    % geconfonrteerd dan kan enkel dat worden opgeschaald. Zorgt voor
-    % lagere kost.
-
 \end{description}
 
 
