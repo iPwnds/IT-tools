@@ -115,3 +115,57 @@ note = {(Accessed on 11/24/2023)}
 }
 
 
+% Vermeldt dat outages hoge kosten met zich mee kunnen brengen (maar
+% andere bron van Guitart et al. is daar beter geschikt voor).
+% Goede algemene bron die beschrijving geeft van capaciteitsproblemen
+% Geeft literature/review studie met taxomonie van verschillende
+% technien om performance van internetdiensten te garanteren.
+
+@article{guitart2010survey,
+  author          = {Guitart, Jordi and Torres, Jordi and Ayguadé, Eduard},
+  title           = {A survey on performance management for internet applications},
+  journal         = {Concurrency and Computation: Practice and Experience},
+  volume          = {22},
+  number          = {1},
+  pages           = {68-106},
+  doi             = {https://doi.org/10.1002/cpe.1470},
+  abstract        = {Abstract Internet applications have become indispensable for many business and personal processes, turning the performance of these applications into a key issue. For this reason, recent research has comprehensively explored mechanisms for managing the performance of these applications, with special focus on dealing with overload situations and providing QoS guarantees to clients. This paper makes a survey on the different proposals in the literature for managing Internet applications' performance. We present a complete taxonomy that characterizes and classifies these proposals into several categories including request scheduling, admission control, service differentiation, dynamic resource management, service degradation, control theoretic approaches, works using queuing models, observation-based approaches that use runtime measurements, and overall approaches combining several mechanisms. For each work, we provide a brief description in order to provide the reader with a global understanding of the research progress in this area. Copyright © 2009 John Wiley \& Sons, Ltd.},
+  year            = {2010}
+}
+
+% Vermeldt dat outages hoge kosten met zich mee kunnen bregen in context
+% e-commerce.
+% Gaat specifiek in op bestaande connecties verderzetten en die prioritiseren.
+% Concreet: SSL connection differentiation en session-based 
+% adaptive admission control.
+% Vermeldt ook dat er grote variaties in demand zijn bij hedendaagse websites.
+% Geeft goede algemene beschrijving van wat overload/capaciteitsproblemen
+% inhouden.
+
+@article{guitart2007designing,
+  author          = {Guitart, Jordi and Carrera, David and Beltran, Vicenç and Torres, Jordi and Ayguadé, Eduard},
+  title           = {Designing an overload control strategy for secure e-commerce applications},
+  journal         = {Computer Networks},
+  volume          = {51},
+  number          = {15},
+  pages           = {4492-4510},
+  doi             = {https://doi.org/10.1016/j.comnet.2007.05.010},
+  abstract        = {Uncontrolled overload can lead e-commerce applications to considerable revenue losses. For this reason, overload prevention in these applications is a critical issue. In this paper we present a complete characterization of secure e-commerce applications scalability to determine which are the bottlenecks in their performance that must be considered for an overload control strategy. With this information, we design an adaptive session-based overload control strategy based on SSL (Secure Socket Layer) connection differentiation and admission control. The SSL connection differentiation is a key factor because the cost of establishing a new SSL connection is much greater than establishing a resumed SSL connection (it reuses an existing SSL session on the server). Considering this big difference, we have implemented an admission control algorithm that prioritizes resumed SSL connections to maximize the performance in session-based environments and dynamically limits the number of new SSL connections accepted, according to the available resources and the current number of connections in the system, in order to avoid server overload. Our evaluation on a Tomcat server demonstrates the benefit of our proposal for preventing server overload.},
+  year            = {2007},
+}
+
+% Vermeldt dat outages hoge maatschappelijke kosten met zich mee kunnen brengen
+% want gaat in op outages van crisis-geralteerde web servers (bv. rampen,
+% terrorisme). Informatievoorziening kan ingedrang komen.
+% Gaat in op idee content adaptie. Beter nog aan iedereen meest relevante info
+% kunnen geven dan volledige website aan klein aantal gebruikers of niemand.
+
+@inproceedings{andersson2006design,
+  author          = {Andersson, M. and Host, M. and Jianhua, C. and Nyberg, C. and Kihl, M.},
+  title           = {Design and Evaluation of an Overload Control System for Crisis-Related Web Server Systems},
+  booktitle       = {International Conference on Internet Surveillance and Protection ({ICISP} '06)}, 
+  doi             = {10.1109/ICISP.2006.8},
+  abstract        = {During recent years we have seen several large-scale crises. The 9/11 terror attacks, tsunamis, storms, floods and bombings have all caused a great deal of damage. A common factor in these crises has been the need for information and one important source of information is usually Web sites. In this work we investigate and design an overload control system for Web sites that are vital in crises. The overload control system uses content adaption to dynamically control Web site performance},
+  year            = {2006},
+  month           = aug,
+}
