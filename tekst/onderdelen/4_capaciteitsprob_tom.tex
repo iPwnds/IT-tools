@@ -9,7 +9,8 @@
 Deze sectie gaat in op het technische aspect van de problemen bij Ticketmaster,
 door capaciteitstekort en oplossingen daarvoor te bespreken. Aangezien dit
 een algemene IT-problematiek is, die zich voordoet in andere bedrijven en
-sectoren, wordt dit algemeen behandeld. 
+sectoren \cite{warren2023chatgpt, warren2020discord, reuters2023what},
+wordt dit algemeen behandeld. 
 
 Om een online dienst of website te gebruiken, moeten gebruikers de
 server(s) van die dienst of website bereiken. In die context is er sprake van
@@ -19,10 +20,14 @@ Dat kan ertoe leiden dat systemen trager zijn (bv. lange laattijd website),
 slecht functioneren (bv. slechte weergave van site/applicatie) of
 helemaal niet meer werken (bv. foutmeldingen zoals HTTP-statuscode 503
 \footnote{Deze statuscode geeft aan dat de dienst niet beschikbaar is}).
+\cite{guitart2010survey, guitart2007designing}
+
 Het probleem kan zich continu voordoen, wanneer de infrastrctuur onvoldoende
 is om aan de normale vraag tegemoet te komen,
 of van tijdelijke aard zijn, wanneer de flexibiliteit ontbreekt om
 belastingspieken op te vangen.
+% Transient overload: zou betekenen dat load varieert overheen tijd
+
 
 Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
 
@@ -124,3 +129,7 @@ Mogelijke oplossingen voor capaciteitsproblemen zijn de volgende:
 
 % TODO: Misschien nog behandelen: welke technieken gebruikt Ticketmaster al?
 % TODO: Referenties
+% TODO: Toevoegen prioritiseren van bepaalde requests als techniek
+% Gaat volgende tegen: Clients can experience outages. Even though,
+% there may be enough capacity to deliver all responses for subset of clients,
+% all clients normally experience some issues.
