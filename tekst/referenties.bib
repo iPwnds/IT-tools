@@ -367,6 +367,51 @@ year = {2006}
   month           = dec,
 }
 
+% Bespreekt state-of-the-art m.b.t. workload generation voor
+% prestatie-evaluaties
+@incollection{penaortiz2015generating,
+  author          = {Peña-Ortiz, Raúl and Gil, José Antonio and Sahuquillo, Julio and Pont, Ana and Domènech, Josep},
+  title           = {Generating realistic workload for web performance studies},
+  booktitle       = {Modeling and Simulation of Computer Networks and Systems},
+  editor          = {Obaidat, Mohammad S. and Nicopolitidis, Petros and Zarai, Faouzi},
+  publisher       = {Morgan Kaufmann},
+  address         = {Boston},
+  pages           = {157-186},
+  doi             = {https://doi.org/10.1016/B978-0-12-800887-4.00006-7},
+  abstract        = {This chapter presents the current state of the art in characterizing and generating workloads for Web performance evaluation. First, it reviews a representative subset of the most relevant perspectives to define Web workloads, and analyzes the main drawbacks that we have to tackle in order to obtain representative workloads for current Web applications. After that, we evaluate and classify the most commonly used software tools proposed in the open literature according to their main features and ability to generate workloads for the dynamic Web. Finally, the chapter presents the Dynamic WEB workload model (DWEB) with the aim of characterizing a more realistic workload when evaluating the performance of current Web applications. DWEB tackles in a progressive way the main challenges when modeling the user’s behavior on representative workloads. To this end, it defines a couple of new concepts: user’s navigations and user’s roles. These concepts characterize different levels of dynamism in the workload definition by means of modeling Web users’ behaviors.},
+  year            = {2015},
+}
+
+% Stresstests met workload generators en simulations met oog op web performance
+% evaluation and metrics.
+@article{penaortiz2013analyzing,
+  author          = {Peña-Ortiz, Raúl and Gil, José Antonio and Sahuquillo, Julio and Pont, Ana},
+  title           = {Analyzing web server performance under dynamic user workloads},
+  journal         = {Computer Communications},
+  volume          = {36},
+  number          = {4},
+  pages           = {386-395},
+  doi             = {https://doi.org/10.1016/j.comcom.2012.11.005},
+  abstract        = {The increasing popularity of web applications has introduced a new paradigm where users are no longer passive web consumers but they become active contributors to the web, specially in the contexts of social networking, blogs, wikis or e-commerce. In this new paradigm, contents and services are even more dynamic, which consequently increases the level of dynamism in user’s behavior. Moreover, this trend is expected to rise in the incoming web. This dynamism is a major adversity to define and model representative web workload, in fact, this characteristic is not fully represented in the most of the current web workload generators. This work proves that the web user’s dynamic behavior is a crucial point that must be addressed in web performance studies in order to accurately estimate system performance indexes. In this paper, we analyze the effect of using a more realistic dynamic workload on the web performance metrics. To this end, we evaluate a typical e-commerce scenario and compare the results obtained using different levels of dynamic workload instead of traditional workloads. Experimental results show that, when a more dynamic and interactive workload is taken into account, performance indexes can widely differ and noticeably affect the stress borderline on the server. For instance, the processor usage can increase 30% due to dynamism, affecting negatively average response time perceived by users, which can also turn in unwanted effects in marketing and fidelity policies.},
+  year            = {2013},
+}
+
+% Stresstests met workload generators en simulations met oog op web performance
+% evaluation and metrics.
+@incollection{penaortiz2015generating,
+  author          = {Peña-Ortiz, Raúl and Gil, José Antonio and Sahuquillo, Julio and Pont, Ana and Domènech, Josep},
+  title           = {A new testbed for web performance evaluation},
+  booktitle       = {Modeling and Simulation of Computer Networks and Systems},
+  editor          = {Obaidat, Mohammad S. and Nicopolitidis, Petros and Zarai, Faouzi},
+  publisher       = {Morgan Kaufmann},
+  address         = {Boston},
+  pages           = {225-251},
+  doi             = {https://doi.org/10.1016/B978-0-12-800887-4.00008-0},
+  abstract        = {Together with the evolution of the WWW, the behavior of WWW users has changed to include an increased dynamism. This makes traditional ways of conducting performance evaluation studies obsolete. In this chapter we devise a new testbed that has the ability of reproducing different types of web workloads. After the validation process, the testbed will be used to analyze the effect of applying dynamic workloads on the web performance metrics, instead of traditional workloads. The chapter introduces the workload generator used, the testbed design and describes the validation process.},
+  year            = {2015},
+}
+
+
 
 % Bronnen omtrent web content adaption
 % Idee dat afgeleverde content aangepast kan worden om overload te verminderen.
@@ -474,12 +519,3 @@ B. Urgaonkar and P. Shenoy. Cataclysm: Policing Extreme Overloads in Internet Ap
 % requests bijvoorbeeld prioritiseren.
 % J. Zhou, C. Zhang, T. Yang and L. Chu, "Request-Aware Scheduling for Busy Internet Services," Proceedings IEEE INFOCOM 2006. 25TH IEEE International Conference on Computer Communications, Barcelona, 2006, pp. 1-11, doi: 10.1109/INFOCOM.2006.279.
 
-% Stress testing met workload generators en simulations
-% Raúl Peña-Ortiz, José A. Gil, Julio Sahuquillo, Ana Pont, Analyzing web server performance under dynamic user workloads, Computer Communications, Volume 36, Issue 4, 2013, https://doi.org/10.1016/j.comcom.2012.11.005.
-% Chapters uit dit boek: https://www.sciencedirect.com/book/9780128008874/modeling-and-simulation-of-computer-networks-and-systems
-% Chapter over web performance evaluations d.m.v. workload generators
-% Over een generator die verschillende workloads kan genereren met
-% als doel web performance metrics.
-% Raúl Peña-Ortiz, José Antonio Gil, Julio Sahuquillo, Ana Pont, Josep Domènech, Chapter 8 - A new testbed for web performance evaluation, Editor(s): Mohammad S. Obaidat, Petros Nicopolitidis, Faouzi Zarai, Modeling and Simulation of Computer Networks and Systems, Morgan Kaufmann, 2015, Pages 225-251, https://doi.org/10.1016/B978-0-12-800887-4.00008-0.
-% Chapter over state of the art voor workload generation voor prestat-evaluaties
-% Raúl Peña-Ortiz, José Antonio Gil, Julio Sahuquillo, Ana Pont, Josep Domènech,Chapter 6 - Generating realistic workload for web performance studies, Editor(s): Mohammad S. Obaidat, Petros Nicopolitidis, Faouzi Zarai, Modeling and Simulation of Computer Networks and Systems, Morgan Kaufmann, 2015, Pages 157-186, https://doi.org/10.1016/B978-0-12-800887-4.00006-7.
