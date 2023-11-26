@@ -224,7 +224,9 @@
 % individuele server
 % Tarek F Abdelzaher, Nina Bhatti, Web content adaptation to improve server overload behavior, Computer Networks,
 % Michael Gopshtein and Dror G. Feitelson. 2011. Trading off quality for throughput using content adaptation in web servers. In Proceedings of the 4th Annual International Conference on Systems and Storage (SYSTOR '11). Association for Computing Machinery, New York, NY, USA, Article 6, 1–14. https://doi.org/10.1145/1987816.1987824
-% Gerelateerd is dymaische gecontrolleerde service degradatie.
+
+
+% Web content adaptie is gerelateerd is dymaische gecontrolleerde service degradatie.
 % Als applicatie uit services bestaat kunnen bottlenecks worden gezocht.
 % Degraderen van services die veel resources gebruiken en lage prioriteit hebben
 % om zo voorziening key services te vrijwaren.
@@ -254,9 +256,11 @@
 % CHERKASOVA , L. AND P HAAL , P. 1998. Session-based admission control: A mechanism for improv-
 % ing the performance of an overloaded web server. Tech. Rep. HPL-98-119, Hewlett Packard
 % Laboratories
+B. Urgaonkar and P. Shenoy. Cataclysm: Policing Extreme Overloads in Internet Applications. In Proc. of the International World Wide Web Conference (WWW'05), Chiba, Japan, Jun. 2005.
+%  Voigt, R. Tewari, and D. Freimuth. Kernel Mechanisms for Service Differentiation in Overloaded Web Servers. In USENIX Annual Technical Conference, pages 189-202, 2001.
 % IYER , R., T EWARI, V., AND K ANT, K. 2000. Overload control mechanisms for web servers. In Workshop
 % on Performance and QoS of Next Generation Networks (Nov).
-% ELSH , M. AND CULLER, D. 2003. Adaptive overload control for busy internet servers. In Proceed-
+% WELSH , M. AND CULLER, D. 2003. Adaptive overload control for busy internet servers. In Proceed-
 % ings of the USENIX Symposium on Internet Technologies and Systems.
 % ELNIKETY, S., N AHUM, E. M., T RACEY, J., AND Z WAENEPOEL, W. 2004. A method for transparent admis-
 % sion control and request scheduling in dynamic e-commerce Web sites. In International World-
@@ -284,10 +288,22 @@
 % M. Colajanni, P.S. Yu and D.M. Dias, Scheduling algorithms for distributed Web servers, in: Proc. of the 17th International Conference on Distributed Computing Systems, pp. 169–176, Baltimore, MD, May 1997.
 % M. Colajanni, P.S. Yu, V. Cardellini, M.P. Papazoglou, M. Takizawa, B. Kramer and S. Chanson, Dynamic load balancing in geographically distributed heterogeneous Web servers, in: Proc. of the 18th International Conference on Distributed Computing Systems, pp. 295–302, Amsterdam, Netherlands, May 1998.
 % R.S. Engelschall, Balancing your Web site. Practical approaches for distributing HTTP traffic, WEB-Techniques 3(5) (1998): 45–52.
+% Onderstaande bron bespreekt belang van predictie-technieken voor performance
+% en load zodat cloud infrastructuur goed elastisch kan schalen
+% Maryam Amiri, Leyli Mohammad-Khanli, Survey on prediction models of applications for resources provisioning in cloud, Journal of Network and Computer Applications, Volume 82, 2017, https://doi.org/10.1016/j.jnca.2017.01.016.
+
+
+% Bronnen omtrent types schalen
+% Onzeker over onderstaande omdat lijkt te gaan over cluster binnen een
+% server unit
+% M. Michael, J. E. Moreira, D. Shiloach and R. W. Wisniewski, "Scale-up x Scale-out: A Case Study using Nutch/Lucene," 2007 IEEE International Parallel and Distributed Processing Symposium, Long Beach, CA, USA, 2007, pp. 1-8, doi: 10.1109/IPDPS.2007.370631.
 
 % Bronnen omtrent redirectie en redistributie van verzoeken
 % A. Mourad, Huiqun-Liu, Scalable Web server architectures, in: Proc. of the 2nd IEEE Symposium on Computer and Communications, pp. 12–16, Alexandria, Egypt, July 1997.
 
+% Bronnen omtrent load balancing
+% Yong Meng Teo, Ayani R. Comparison of Load Balancing Strategies on Cluster-based Web Servers. SIMULATION. 2001;77(5-6):185-195. doi:10.1177/003754970107700504
+% G. P. Sarmila, N. Gnanambigai and P. Dinadayalan, "Survey on fault tolerant — Load balancing algorithmsin cloud computing," 2015 2nd International Conference on Electronics and Communication Systems (ICECS), Coimbatore, India, 2015, pp. 1715-1720, doi: 10.1109/ECS.2015.7124879.
 % Dynamische scheduling overheen clusters van servers
 % D. Andersen and T. McCune, Towards a hierarchical scheduling system for distributed WWW server clusters, in: Proc. of the 7th International Symposium on High Performance Distributed Computing, Chicago, IL, July 1998.
 
@@ -321,3 +337,18 @@ exceeds the capacity of that resources.
 % malafide overload (DoS-aanval)
 % Probleem: bron van lage kwaliteit
 % E. Tóth, Z. Hornak and G. Tóth, "Protection System against Overload and Distributed Denial of Service Attacks," 2008 Third International Conference on Dependability of Computer Systems DepCoS-RELCOMEX, Szklarska Poreba, Poland, 2008, pp. 195-202, doi: 10.1109/DepCoS-RELCOMEX.2008.53.
+
+% Scheduling als techniek zoals admission control en adaptive degradation
+% technieken zijn. Differentieren tussen requests obv duur en short
+% requests bijvoorbeeld prioritiseren.
+% J. Zhou, C. Zhang, T. Yang and L. Chu, "Request-Aware Scheduling for Busy Internet Services," Proceedings IEEE INFOCOM 2006. 25TH IEEE International Conference on Computer Communications, Barcelona, 2006, pp. 1-11, doi: 10.1109/INFOCOM.2006.279.
+
+% Stress testing met workload generators en simulations
+% Raúl Peña-Ortiz, José A. Gil, Julio Sahuquillo, Ana Pont, Analyzing web server performance under dynamic user workloads, Computer Communications, Volume 36, Issue 4, 2013, https://doi.org/10.1016/j.comcom.2012.11.005.
+% Chapters uit dit boek: https://www.sciencedirect.com/book/9780128008874/modeling-and-simulation-of-computer-networks-and-systems
+% Chapter over web performance evaluations d.m.v. workload generators
+% Over een generator die verschillende workloads kan genereren met
+% als doel web performance metrics.
+% Raúl Peña-Ortiz, José Antonio Gil, Julio Sahuquillo, Ana Pont, Josep Domènech, Chapter 8 - A new testbed for web performance evaluation, Editor(s): Mohammad S. Obaidat, Petros Nicopolitidis, Faouzi Zarai, Modeling and Simulation of Computer Networks and Systems, Morgan Kaufmann, 2015, Pages 225-251, https://doi.org/10.1016/B978-0-12-800887-4.00008-0.
+% Chapter over state of the art voor workload generation voor prestat-evaluaties
+% Raúl Peña-Ortiz, José Antonio Gil, Julio Sahuquillo, Ana Pont, Josep Domènech,Chapter 6 - Generating realistic workload for web performance studies, Editor(s): Mohammad S. Obaidat, Petros Nicopolitidis, Faouzi Zarai, Modeling and Simulation of Computer Networks and Systems, Morgan Kaufmann, 2015, Pages 157-186, https://doi.org/10.1016/B978-0-12-800887-4.00006-7.
