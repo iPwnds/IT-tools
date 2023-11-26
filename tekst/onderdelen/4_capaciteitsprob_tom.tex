@@ -4,35 +4,32 @@
 % bedoeling van de sectie is, en eventueel hoe dat relateert aan
 % de vorige sectie of hoe het past in het grotere geheel.
 
-\section{Capaciteitsproblemen bij overbevraging online diensten}
+\section{Capaciteitsproblemen bij overbevraging}
 
-Deze sectie gaat in op technische aspecten van de
-Ticketmaster-problemen,
+Deze sectie gaat in op de technische aspecten,
 door capaciteitstekorten en oplossingen daarvoor te bespreken.
 Dit wordt algemeen behandeld,
-angezien het een IT-problematiek is 
+aangezien het een IT-problematiek is 
 die zich ook voordoet in andere bedrijven en
 sectoren \cite{warren2023chatgpt, warren2020discord, reuters2023what}.
 
-Om een online dienst of website te gebruiken, moeten gebruikers de
+Om een online dienst/website te gebruiken, moeten gebruikers de
 server(s) daarvan bereiken. Er is sprake van
 capaciteitstekort wanneer de serverinfrastructuur onvoldoende systeemresources
-heeft om alle inkomende verzoeken van gebruikers af te handelen.
-Dat kan ertoe leiden dat systemen trager zijn (bv. lange laattijden),
+heeft om alle inkomende verzoeken af te handelen.
+Dat kan ertoe leiden dat systemen trager zijn (bv. laattijden),
 slecht functioneren (bv. slechte weergave site/applicatie) of
-helemaal niet meer werken (bv. HTTP-statuscode
-503)\footnote{"503 Service Unavailable" \cite{fielding2022http}}
+niet meer werken (bv. HTTP-statuscode
+503)\footnote{"Service Unavailable" \cite{fielding2022http}}
 \cite{guitart2010survey, guitart2007designing}.
-Het probleem kan zich continu voordoen, wanneer normale belasting problemen
-geeft, of van tijdelijke aard zijn, wanneer belastingspieken niet kunnen worden
-opgevangen \cite{schroeder2006web}. Pieken kunnen veroorzaakt worden
-door verschillende soorten verzoeken:
+Het probleem kan continu zijn, wanneer normale belasting problemen
+geeft, of slechts tijdelijk, wanneer belastingspieken niet kunnen worden
+opgevangen \cite{schroeder2006web}. Pieken kennen verschillende oorzaken:
 normale (bv. Black Friday-toeloop \cite{iyer2001overload}),
-onwenselijke (bv. web scraping \cite{thelwall2006web}) of
+onwenselijke (bv. web scraping \cite{thelwall2006web}) en
 malafide (bv. cyberaanval \cite{loukas2009protection}).
 
-Verschillende technieken kunnen capaciteitsproblemen verminderen.
-De voornaamste zijn (niet-exhaustief):
+De voornaamste technieken tegen capaciteitsproblemen zijn:
 
 \begin{description}
     \item [Verticaal opschalen:] opwaarderen (beschikbare)
@@ -77,6 +74,11 @@ De voornaamste zijn (niet-exhaustief):
     t.v.v. essentiële dienstverlening
     \cite{wang2012towards}
 
+    \item [Beveiligen tegen cyberaanvallen:] detectie en afweer malafide
+    verzoeken \cite{loukas2009protection}
+    (bv. op niveau load balancer \footnote{Zie infra voor definitie.}
+    \cite{amazon2023whatisload})
+
 
 \end{description}
 
@@ -100,7 +102,7 @@ extra reduceren:
     flexibiliteit/reactiviteit door extensieve monitoring belasting,
     automatische opschaling en automatische infrastructuur-configuratie
     door gebruik 'Infrastructure as Code (IaC)'
-    \footnote{IaC maakt configuraties-sjablonen zodat inzet nieuwe
+    \footnote{IaC maakt configuratie-sjablonen zodat inzet nieuwe
     servers wordt geautomatiseerd. \cite{microsoft2023wat}}
     en hulpprogramma's \cite{microsoft2023wat}
     
@@ -113,13 +115,7 @@ extra reduceren:
 
 \end{description}
 
-
-
-
-
-% TODO: Vermelden dat we specifiek focussen op wat bedrijven zelf kunnen doen.
-% Want ook fundamenteler kan er op besturingssysteemniveau iets gedaan worden
-% voor betere resource allocation:
-% G. Banga, P. Druschel and J.C. Mogul, Resource containers: A new facility for resource management in server systems, in: 3rd Symposium on Operating Systems Design and Implementation, New Orleans, LA, February 1999.
-% P. Druschel and Gaurav Banga, Lazy Receiver Processing (LRP): A network subsystem architecture for server systems, in: OSDI '96, Seattle, Washington, October 1996.
-% J. Mogul and K.K. Ramakrishnan, Eliminating receive livelock in an interrupt-driven kernel, in: USENIX '96, San Diego, CA, January 1996.
+Schadebeperking bij onvermijdbare overbelasting
+(bv. selectieve terminatie en admissiecontrole) en maatregelen op
+besturingssysteem-/kernelniveau (bv. resource-allocatie)
+vallen buiten bestek van deze paper.
