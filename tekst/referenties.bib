@@ -238,11 +238,49 @@
   year         = 2023,
   note         = "Last updated : February 18 2023"
 }
-    
 
-% Dit beschrijft overload-pieken door bepaalde events en dergelijke
-% https://link.springer.com/chapter/10.1007/978-1-4471-0705-7_13
-% Echter enkel preview eerste 2 pagina's
+% Beschrijft ethische vraagstukken m.b.t. web crawling/scraping waaronder
+% overload op server.
+@article{thelwall2006web,
+author = {Thelwall, Mike and Stuart, David},
+title = {Web crawling ethics revisited: Cost, privacy, and denial of service},
+journal = {Journal of the American Society for Information Science and Technology},
+volume = {57},
+number = {13},
+pages = {1771-1779},
+doi = {https://doi.org/10.1002/asi.20388},
+abstract = {Abstract Ethical aspects of the employment of Web crawlers for information science research and other contexts are reviewed. The difference between legal and ethical uses of communications technologies is emphasized as well as the changing boundary between ethical and unethical conduct. A review of the potential impacts on Web site owners is used to underpin a new framework for ethical crawling, and it is argued that delicate human judgment is required for each individual case, with verdicts likely to change over time. Decisions can be based upon an approximate cost-benefit analysis, but it is crucial that crawler owners find out about the technological issues affecting the owners of the sites being crawled in order to produce an informed assessment.},
+year = {2006}
+}
+
+% Beschrijft o.a. hoe events overload kunnen veroorzaken. Verwijst naar
+% online kortingen, gebeurtenissen zoals sportevents ...
+@inproceedings{iyer2001overload,
+  author          = {Iyer, Ravi and Tewari, Vijay and Kant, Krishna},
+  title           = {Overload Control Mechanisms for Web Servers},
+  booktitle       = {Performance and {QoS} of Next Generation Networking},
+  editor          = {Goto, Kunio and Hasegawa, Toshiharu and Takagi, Hideaki and Takahashi, Yutaka},
+  publisher       = {Springer London},
+  address         = {London},
+  pages           = {225-244},
+  abstract        = {Web servers often experience overload situations due to the extremely bursty nature of Internet traffic, popular online events or malicious attacks. Such overload situations significantly affect performance and may result in lost revenue as reported by the recent denial of service attacks. Overload control schemes are well researched and understood in telecommunication systems. However, their use in web servers is currently very limited. Our focus in this paper is to propose effective overload control mechanisms for web servers. An important aspect in overload control is to minimize the work spent on a request which is eventually not serviced due to overload. This paper studies three simple schemes for controlling the load effectively. The first scheme selectively drops incoming requests as they arrive at the server using an intelligent network interface card (NIC). The second scheme provides feedback to a previous node (proxy server or ultimate client) to allow a gapping control that reduces offered load under overload. The third scheme is simply a combination of the two. The experimental results show that even these simple schemes are effective in improving the throughput of the web server by 40{\%} and response time by 70{\%} under heavy overloads, as compared with the case without any overload control.},
+  year            = {2001}
+}
+
+% Beschrijft DoS-aanvallen als malafide oorzaak overbelasting
+% Beschrijft beschermingsmaatregelen
+@article{loukas2009protection,
+    author          = {Loukas, Georgios and Öke, Gülay},
+    title           = {Protection Against Denial of Service Attacks: A Survey},
+    journal         = {The Computer Journal},
+    volume          = {53},
+    number          = {7},
+    pages           = {1020-1037},
+    doi             = {10.1093/comjnl/bxp078},
+    abstract        = {Denial of service (DoS) is a prevalent threat in today's networks because DoS attacks are easy to launch, while defending a network resource against them is disproportionately difficult. Despite the extensive research in recent years, DoS attacks continue to harm, as the attackers adapt to the newer protection mechanisms. For this reason, we start our survey with a historical timeline of DoS incidents, where we illustrate the variety of types, targets and motives for such attacks and how they evolved during the last two decades. We then provide an extensive literature review on the existing research on DoS protection with an emphasis on the research of the last years and the most demanding aspects of defence. These include traceback, detection, classification of incoming traffic, response in the presence of an attack and mathematical modelling of attack and defence mechanisms. Our discussion aims to identify the trends in DoS attacks, the weaknesses of protection approaches and the qualities that modern ones should exhibit, so as to suggest new directions that DoS research can follow.},
+    year            = {2009},
+}
+
 
 % Bronnen omtrent web content adaption
 % Idee dat afgeleverde content aangepast kan worden om overload te verminderen.
@@ -361,11 +399,6 @@ exceeds the capacity of that resources.
 % Bronnen omtrent caching
 % S. Sivasubramanian, G. Pierre, M. van Steen, and G. Alonso, "Analysis of caching and replication strategies for web applications". IEEE Internet Comput. 11(1), pp. 60--66, Jan--Feb 2007.
 
-% Bron over malafide oorzaken overbelasting en beschermingsmaatregelen
-% Maakt onderscheid tussen natuurlijke overload bv. piekuren en
-% malafide overload (DoS-aanval)
-% Probleem: bron van lage kwaliteit
-% E. Tóth, Z. Hornak and G. Tóth, "Protection System against Overload and Distributed Denial of Service Attacks," 2008 Third International Conference on Dependability of Computer Systems DepCoS-RELCOMEX, Szklarska Poreba, Poland, 2008, pp. 195-202, doi: 10.1109/DepCoS-RELCOMEX.2008.53.
 
 % Scheduling als techniek zoals admission control en adaptive degradation
 % technieken zijn. Differentieren tussen requests obv duur en short
