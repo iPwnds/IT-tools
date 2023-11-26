@@ -281,6 +281,92 @@ year = {2006}
     year            = {2009},
 }
 
+% SCHALING
+
+% Geeft duidelijke beschrijving horizontale vs. verticale schaling
+% "Horizontal scaling refers to changing the number of servers (physical or
+% virtual) hosting an Internet service or a multi-tier application"
+% "Vertical scaling refers to adjusting the effective “sizes” of
+% individual servers."
+% Wijst er ook o pdat het kaan gaan of fysiek of virtueel. Je kan ook virtuele
+% machines opschalen door een individuele VM meer resources te geven en dat kan
+% ook werken met auto-scaling.
+@inproceedings{lu2014applicationdriven,
+  author          = {Lu, Lei and Zhu, Xiaoyun and Griffith, Rean and Padala, Pradeep and Parikh, Aashish and Shah, Parth and Smirni, Evgenia},
+  title           = {Application-driven dynamic vertical scaling of virtual machines in resource pools}, 
+  booktitle       = {2014 {IEEE} Network Operations and Management Symposium ({NOMS})}, 
+  pages           = {1-9},
+  doi             = {10.1109/NOMS.2014.6838238},
+  abstract        = {Most modern hypervisors offer powerful resource control primitives such as reservations, limits, and shares for individual virtual machines (VMs). These primitives provide a means to dynamic vertical scaling of VMs in order for the virtual applications to meet their respective service level objectives (SLOs). VMware DRS offers an additional resource abstraction of a resource pool (RP) as a logical container representing an aggregate resource allocation for a collection of VMs. In spite of the abundant research on translating application performance goals to resource requirements, the implementation of VM vertical scaling techniques in commercial products remains limited. In addition, no prior research has studied automatic adjustment of resource control settings at the resource pool level. In this paper, we present AppRM, a tool that automatically sets resource controls for both virtual machines and resource pools to meet application SLOs. AppRM contains a hierarchy of virtual application managers and resource pool managers. At the application level, AppRM translates performance objectives into the appropriate resource control settings for the individual VMs running that application. At the resource pool level, AppRM ensures that all important applications within the resource pool can meet their performance targets by adjusting controls at the resource pool level. Experimental results under a variety of dynamically changing workloads composed by multi-tiered applications demonstrate the effectiveness of AppRM. In all cases, AppRM is able to deliver application performance satisfaction without manual intervention.},
+  year            = {2014},
+  month           = may,
+}
+
+% Geeft eveneens duidelijk beschrijving horizontale vs. verticale schaling
+% Verticaal: "deployment of applications on large shared-memory servers (large SMPs)"
+% Verwijst naar stijgende grootte en clockrate processors
+% Horizontaal: "deployment of applications on multiple small interconnected servers (clusters)"
+@inproceedings{michael2007scaleup,
+  author          = {Michael, Maged and Moreira, Jose E. and Shiloach, Doron and Wisniewski, Robert W.},
+  title           = {Scale-up x Scale-out: A Case Study using {Nutch}/{Lucene}},
+  booktitle       = {2007 {IEEE} International Parallel and Distributed Processing Symposium}, 
+  pages           = {1-8},
+  doi             = {10.1109/IPDPS.2007.370631},
+  abstract        = {Scale-up solutions in the form of large SMPs have represented the mainstream of commercial computing for the past several years. The major server vendors continue to provide increasingly larger and more powerful machines. More recently, scale-out solutions, in the form of clusters of smaller machines, have gained increased acceptance for commercial computing. Scale-out solutions are particularly effective in high-throughput Web-centric applications. In this paper, we investigate the behavior of two competing approaches to parallelism, scale-up and scale-out, in an emerging search application. Our conclusions show that a scale-out strategy can be the key to good performance even on a scale-up machine. Furthermore, scale-out solutions offer better price/performance, although at an increase in management complexity.},
+  year            = {2007},
+  month           = mar,
+}
+
+% Deze bron verwijst duidelijker naar welke systeemresources allemaal verticaal
+% gescaled kunnen worden (RAM, storage, CPU)
+% Vermeldt ook horizontale schaling maar is minder essentie artikel. Dus
+% daarvoor beter andere bronnen
+@inproceedings{appuswamy2013scaleup,
+  author          = {Appuswamy, Raja and Gkantsidis, Christos and Narayanan, Dushyanth and Hodson, Orion and Rowstron, Antony},
+  title           = {Scale-up vs Scale-out for {Hadoop}: Time to Rethink?},
+  booktitle       = {Proceedings of the 4th Annual Symposium on Cloud Computing},
+  series          = {{SOCC} '13},
+  articleno       = {20},
+  numpages        = {13},
+  publisher       = {Association for Computing Machinery},
+  address         = {New York, NY, USA},
+  location        = {Santa Clara, California},
+  doi             = {10.1145/2523616.2523629},  
+  abstract        = {In the last decade we have seen a huge deployment of cheap clusters to run data analytics workloads. The conventional wisdom in industry and academia is that scaling out using a cluster of commodity machines is better for these workloads than scaling up by adding more resources to a single server. Popular analytics infrastructures such as Hadoop are aimed at such a cluster scale-out environment.Is this the right approach? Our measurements as well as other recent work shows that the majority of real-world analytic jobs process less than 100 GB of input, but popular infrastructures such as Hadoop/MapReduce were originally designed for petascale processing. We claim that a single "scale-up" server can process each of these jobs and do as well or better than a cluster in terms of performance, cost, power, and server density. We present an evaluation across 11 representative Hadoop jobs that shows scale-up to be competitive in all cases and significantly better in some cases, than scale-out. To achieve that performance, we describe several modifications to the Hadoop runtime that target scale-up configuration. These changes are transparent, do not require any changes to application code, and do not compromise scale-out performance; at the same time our evaluation shows that they do significantly improve Hadoop's scale-up performance.},
+  year            = {2013},
+}
+
+% Deze bron gaat vooral over cloud computing en elasticiteit d.m.v.
+% pay-as-you-go prijsmodel en auto-scaling. 
+% Geeft ook beschrijving verticaal en horizontaal schalen maar verwijst puur
+% naar VMs. Idee van bron is vooral dat er trade-offs zijn tussen verschillende
+% scaling strategieen en dat doordachte keuze belangrijk bij kiezen
+% auto-scaling configuratie.
+@article{gandhi2018modeldriven,
+  author          = {Gandhi, Anshul and Dube, Parijat and Karve, Alexei and Kochut, Andrzej and Zhang, Li},
+  title           = {Model-driven optimal resource scaling in cloud},
+  journal         = {Software and systems modeling},
+  volume          = {17},
+  number          = {2},
+  pages           = {509-526},
+  doi             = {https://doi.org/10.1007/s10270-017-0584-y},
+  abstract        = {Cloud computing offers the flexibility to dynamically size the infrastructure in response to changes in workload demand. While both horizontal scaling and vertical scaling of infrastructure are supported by major cloud providers, these scaling options differ significantly in terms of their cost, provisioning time, and their impact on workload performance. Importantly, the efficacy of horizontal and vertical scaling critically depends on the workload characteristics, such as the workload’s parallelizability and its core scalability. In today’s cloud systems, the scaling decision is left to the users, requiring them to fully understand the trade-offs associated with the different scaling options. In this paper, we present our solution for optimizing the resource scaling of cloud deployments via implementation in OpenStack. The key component of our solution is the modeling engine that characterizes the workload and then quantitatively evaluates different scaling options for that workload. Our modeling engine leverages Amdahl’s Law to model service timescaling in scale-up environments and queueing-theoretic concepts to model performance scaling in scale-out environments. We further employ Kalman filtering to account for inaccuracies in the model-based methodology and to dynamically track changes in the workload and cloud environment.},
+  year            = {2018},
+}
+
+% Idee trade-offs tussen verschillende scaling strategieen en doordachte
+% keuze bij elastische cloud techniecken belangrijk.
+@inproceedings{hwang2014scaleout,
+  author          = {Hwang, Kai and Shi, Yue and Bai, Xiaoying},
+  title           = {Scale-Out vs. Scale-Up Techniques for Cloud Performance and Productivity},
+  booktitle       = {2014 {IEEE} 6th International Conference on Cloud Computing Technology and Science}, 
+  pages           = {763-768},
+  doi             = {10.1109/CloudCom.2014.66},
+  abstract        = {An elastic cloud provisions machine instances upon user demand. Auto-scaling, scale-out, scale-up, or any mixture techniques are used to reconfigure the user cluster as workload changes. We evaluate three scaling strategies to upgrade the performance, efficiency and productivity of elastic clouds like EC2, Rack space, etc. We developed new performance models and run the Hi Bench benchmark to test Hadoop performance on various EC2 configurations. The strengths and shortcomings of three scaling strategies are revealed in our Hi Bench experiments: (1). Scale-out overhead is shown lower than that experienced in scale-up or mixed scaling clouds. Scale-out to a larger cluster of small nodes demonstrated high scalability. (2). Scaling up and mixed scaling have high performance in using smaller clusters with a few powerful machine instances. (3). With a mixed scaling mode, the cloud productivity is shown upgradable with higher flexibility in applications with performance/cost tradeoffs.},
+  year            = {2014},
+  month           = dec,
+}
+
 
 % Bronnen omtrent web content adaption
 % Idee dat afgeleverde content aangepast kan worden om overload te verminderen.
@@ -308,9 +394,6 @@ year = {2006}
 % M. Welsh and D. Culler. Adaptive Overload Control for Busy Internet Servers. In Proceedings of the 4th USENIX Conference on Internet Technologies and Systems (USITS'03), pages 26--28, Seattle, WA, March 2003. 
 % A. Fox, S. D. Gribble, E. A. Brewer, and E. Amir. Adapting to Network and Client Variability via On-Demand Dynamic Distillation. In ASPLOS, 1996. 
 
-% Bronnen omtrent over-provisioning om om te gaan met piekbelasting
-% S. Schechter, M. Krishnan and M.D. Smith, Using path profiles to predict HTTP requests, in: Proc. of the 7th International World Wide Web Conference, pp. 457–467, Brisbane, Qld, Australia, April 1998.
-
 % Bronnen omtrent client admission control. Bepaalde subset van clienten weigeren.
 % Beter consistent aantal gebruikers serveren en andere weigeren. dan iedereen affecteren.
 % Monitoring load en capaciteit. Weigering binnenkomende verzoeken om
@@ -335,7 +418,6 @@ B. Urgaonkar and P. Shenoy. Cataclysm: Policing Extreme Overloads in Internet Ap
 % Deze bron hieroner vermeldt specifiek SBAC.
 % Lu, L., Cherkasova, L., de Nitto Personè, V., Mi, N., Smirni, E. (2010). AWAIT: Efficient Overload Management for Busy Multi-tier Web Services under Bursty Workloads. In: Benatallah, B., Casati, F., Kappel, G., Rossi, G. (eds) Web Engineering. ICWE 2010. Lecture Notes in Computer Science, vol 6189. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-13911-6_6
 
-
 % Horizontale schaling
 % Onderstaande bron bespreekt auto-scaling via de cloud. Hosting via de cloud
 % zou elasticiteit bieden om flexibel uit de breiden en in te krimpen
@@ -359,13 +441,7 @@ B. Urgaonkar and P. Shenoy. Cataclysm: Policing Extreme Overloads in Internet Ap
 % en load zodat cloud infrastructuur goed elastisch kan schalen
 % Maryam Amiri, Leyli Mohammad-Khanli, Survey on prediction models of applications for resources provisioning in cloud, Journal of Network and Computer Applications, Volume 82, 2017, https://doi.org/10.1016/j.jnca.2017.01.016.
 
-
-% Bronnen omtrent types schalen
-% Onzeker over onderstaande omdat lijkt te gaan over cluster binnen een
-% server unit
-% M. Michael, J. E. Moreira, D. Shiloach and R. W. Wisniewski, "Scale-up x Scale-out: A Case Study using Nutch/Lucene," 2007 IEEE International Parallel and Distributed Processing Symposium, Long Beach, CA, USA, 2007, pp. 1-8, doi: 10.1109/IPDPS.2007.370631.
-
-% Bronnen omtrent redirectie en redistributie van verzoeken
+% Bronnen omtrent redirectie en redistributie van verzoeken. LOAD balancing
 % A. Mourad, Huiqun-Liu, Scalable Web server architectures, in: Proc. of the 2nd IEEE Symposium on Computer and Communications, pp. 12–16, Alexandria, Egypt, July 1997.
 
 % Bronnen omtrent load balancing
@@ -373,7 +449,6 @@ B. Urgaonkar and P. Shenoy. Cataclysm: Policing Extreme Overloads in Internet Ap
 % G. P. Sarmila, N. Gnanambigai and P. Dinadayalan, "Survey on fault tolerant — Load balancing algorithmsin cloud computing," 2015 2nd International Conference on Electronics and Communication Systems (ICECS), Coimbatore, India, 2015, pp. 1715-1720, doi: 10.1109/ECS.2015.7124879.
 % Dynamische scheduling overheen clusters van servers
 % D. Andersen and T. McCune, Towards a hierarchical scheduling system for distributed WWW server clusters, in: Proc. of the 7th International Symposium on High Performance Distributed Computing, Chicago, IL, July 1998.
-
 
 % Vermeldt idee dat er drie factoren zijn die performance computersysteem
 % beinvloeden. Systeemdesign, systeeimplementatie en werkbelasting.
@@ -391,14 +466,8 @@ B. Urgaonkar and P. Shenoy. Cataclysm: Policing Extreme Overloads in Internet Ap
 % beeindigt.
 % Jingyu Zhou and Tao Yang. 2006. Selective early request termination for busy internet services. In Proceedings of the 15th international conference on World Wide Web (WWW '06). Association for Computing Machinery, New York, NY, USA, 605–614. https://doi.org/10.1145/1135777.1135866
 
-%  It is defined as the point when the demand on at least one of the server’s resources
-exceeds the capacity of that resources.
-% Verwijzing naar bron hieronder:
-% Schroeder B, Harchol-Balter M. Web servers under overload: How scheduling can help. ACM Trans Internet Technol, 2006, 6: 20–52
-
 % Bronnen omtrent caching
 % S. Sivasubramanian, G. Pierre, M. van Steen, and G. Alonso, "Analysis of caching and replication strategies for web applications". IEEE Internet Comput. 11(1), pp. 60--66, Jan--Feb 2007.
-
 
 % Scheduling als techniek zoals admission control en adaptive degradation
 % technieken zijn. Differentieren tussen requests obv duur en short
