@@ -17,6 +17,7 @@ gebruikte links:
 - https://www.comparably.com/companies/ticketmaster/competitors
 - https://ieeexplore.ieee.org/abstract/document/7907509
 - https://www.kennesaw.edu/coles/centers/markets-economic-opportunity/docs/walton-final.pdf
+- https://www.hln.be/buitenland/ticketmaster-schandaal-amerikaanse-ticketwebsite-rekruteert-professionele-doorverkopers-om-twee-keer-winst-te-pakken~a9e8c282/?referrer=https%3A%2F%2Fwww.eventplanner.be%2F
 
 Referenties:
 
@@ -53,3 +54,10 @@ url={https://heinonline.org/HOL/PrintRequest?handle=hein.journals/wesjalals9&col
 language={eng}
 }
 
+@misc{CBC:online,
+author = {CBC},
+title = {Ticketmaster-schandaal: Amerikaanse ticketwebsite rekruteert professionele doorverkopers om twee keer winst te pakken | Buitenland | hln.be},
+howpublished = {\url{https://www.hln.be/buitenland/ticketmaster-schandaal-amerikaanse-ticketwebsite-rekruteert-professionele-doorverkopers-om-twee-keer-winst-te-pakken~a9e8c282/?referrer=https%3A%2F%2Fwww.eventplanner.be%2F}},
+year = {2018},
+note = {(Accessed on 11/26/2023)}
+}
