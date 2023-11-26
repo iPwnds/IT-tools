@@ -519,6 +519,46 @@ note = "Geplaatst op 27 augustus 2021"
   year            = {2015},
 }
 
+% Bespreekt auto-scaling via de cloud en gaat ook interessant
+% in op geografische verspreiding en load balancing.
+% Hosting via de cloud zou elasticiteit bieden om flexibel
+% uit de breiden en in te krimpen dmv auto-scaling via detectie
+% workload-veranderingen
+% Verwijst bovendien naar de term IaaS in context cloud hosting.
+% Geografische verspreiding interessant indien bepaalde regio overload heeft en
+% ook hier biedt cloud voordeel omdat zij servers over hele wereld hebben
+% waardoor makkelijker hele wereld kan worden bediend.
+% Geographical load balancing is handig aangezien flash crowds meestal
+% niet wereldwijd gebeuren door tijdzone en culture verschillen.
+% Gebruikt de term algoritmen in context van load balancing.
+@article{chenhao2017mitigating,
+  author          = {Qu, Chenhao and Calheiros, Rodrigo Neves and Buyya, Rajkumar},
+  title           = {Mitigating impact of short-term overload on multi-cloud web applications through geographical load balancing},
+  journal         = {Concurrency and Computation: Practice and Experience},
+  volume          = {29},
+  number          = {12},
+  pages           = {e4126},
+  doi             = {https://doi.org/10.1002/cpe.4126},
+  abstract        = {Summary Managed by an auto-scaler in the clouds, applications may still be overloaded by sudden flash crowds or resource failures as the auto-scaler takes time to make scaling decisions and provision resources. With more cloud providers building geographically dispersed data centers, applications are commonly deployed in multiple data centers to better serve customers worldwide. In this case, instead of sufficiently over-provisioning each data center to prepare for occasional overloads, it is more cost-efficient to over-provision each data center a small amount of capacity and to balance the extra load among them when resources in any data center are suddenly saturated. In this paper, we present a decentralized system that timely detects short-term overload situations and autonomously handles them using geographical load balancing and admission control to minimize the resulted performance degradation. Our approach also includes a new algorithm that optimally distributes the excessive load to remote data centers causing minimum increase of overall response times. We developed a prototype and evaluated it on Amazon Web Services. The results show that our approach is able to maintain acceptable quality of service while greatly increase the number of requests served during overloading periods.},
+  year            = {2017}
+}
+
+% Gaat in op load balancing over geografisch gedistribueerde servers
+@inproceedings{colajanni1998dynamic,
+  author = {Colajanni, M. and Yu, P.S. and Cardellini, V.},
+  booktitle = {Proceedings. 18th International Conference on Distributed Computing Systems ({Cat. No.} 98CB36183)}, 
+  title = {Dynamic load balancing in geographically distributed heterogeneous Web servers}, 
+  year = {1998},
+  pages={295-302},
+  abstract={With ever increasing Web traffic, a distributed multi server Web site can provide scalability and flexibility to cope with growing client demands. Load balancing algorithms to spread the requests across multiple Web servers are crucial to achieve the scalability. Various domain name server (DNS) based schedulers have been proposed in the literature, mainly for multiple homogeneous servers. The presence of heterogeneous Web servers not only increases the complexity of the DNS scheduling problem, but also makes previously proposed algorithms for homogeneous distributed systems not directly applicable. This leads us to propose new policies, cabled adaptive TTL algorithms, that take into account both the uneven distribution of client request rates and heterogeneity of Web servers to adaptively set the time-to-live (TTL) value for each address mapping request. Extensive simulation results show that these strategies are robust and effective in balancing load among geographically distributed heterogeneous Web servers.},
+  doi={10.1109/ICDCS.1998.679729},
+  month= may,
+}
+
+% Bronnen omtrent distributie over geografisch verspreidde servers.
+% Momenteel niet gebruikt want minder relevant lijkend.
+% M. Colajanni, P.S. Yu and D.M. Dias, Scheduling algorithms for distributed Web servers, in: Proc. of the 17th International Conference on Distributed Computing Systems, pp. 169–176, Baltimore, MD, May 1997.
+
 % Bronnen omtrent web content adaption
 % Idee dat afgeleverde content aangepast kan worden om overload te verminderen.
 % Succesful laden van minder intensieve content beter dan volledige outage.
@@ -569,34 +609,16 @@ B. Urgaonkar and P. Shenoy. Cataclysm: Policing Extreme Overloads in Internet Ap
 % Deze bron hieroner vermeldt specifiek SBAC.
 % Lu, L., Cherkasova, L., de Nitto Personè, V., Mi, N., Smirni, E. (2010). AWAIT: Efficient Overload Management for Busy Multi-tier Web Services under Bursty Workloads. In: Benatallah, B., Casati, F., Kappel, G., Rossi, G. (eds) Web Engineering. ICWE 2010. Lecture Notes in Computer Science, vol 6189. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-642-13911-6_6
 
-% Horizontale schaling
-% Onderstaande bron bespreekt auto-scaling via de cloud. Hosting via de cloud
-% zou elasticiteit bieden om flexibel uit de breiden en in te krimpen
-% dmv auto-scaling via detectie workload veranderingen
-% Bespreekt daarnaast ook geografische verspreiding en load balancing
-% daaroverheen indien bepaalde regio overload heeft. Ook hier biedt cloud
-% volgens artikel voordeel omdat zij servers over hele wereld hebben waardoor
-% makkelijker hele wereld kan worden bediend. Geographical load balancing is handig
-% aangezien flash crowds meestal niet wereldwijd gebeuren door tijdzone en culture
-% verschillen.
-% Verwijst bovendien naar de term IaaS in context cloud hosting.
-% Gebruikt de term algoritmen in context van load balancing.
-% Qu, C, Calheiros, RN, Buyya, R. Mitigating impact of short-term overload on multi-cloud web applications through geographical load balancing. Concurrency Computat: Pract. Exper. 2017; 29:e4126. https://doi.org/10.1002/cpe.4126 
 % Bron specifiek omtrent rent-a-server voor scaling on demand
 % A. Vahadat, T. Anderson, M. Dahlin, E. Belani, D. Culler, P. Eastham, C. Yoshikawa, WebOS: operating system services for wide area applications, in: Proc. of the 7th International Symposium on High Performance Distributed Computing, Chicago, IL, July 1998.
-% Bronnen omtrent distributie over geografisch verspreidde servers
-% M. Colajanni, P.S. Yu and D.M. Dias, Scheduling algorithms for distributed Web servers, in: Proc. of the 17th International Conference on Distributed Computing Systems, pp. 169–176, Baltimore, MD, May 1997.
-% M. Colajanni, P.S. Yu, V. Cardellini, M.P. Papazoglou, M. Takizawa, B. Kramer and S. Chanson, Dynamic load balancing in geographically distributed heterogeneous Web servers, in: Proc. of the 18th International Conference on Distributed Computing Systems, pp. 295–302, Amsterdam, Netherlands, May 1998.
-% R.S. Engelschall, Balancing your Web site. Practical approaches for distributing HTTP traffic, WEB-Techniques 3(5) (1998): 45–52.
+
 % Onderstaande bron bespreekt belang van predictie-technieken voor performance
 % en load zodat cloud infrastructuur goed elastisch kan schalen
 % Maryam Amiri, Leyli Mohammad-Khanli, Survey on prediction models of applications for resources provisioning in cloud, Journal of Network and Computer Applications, Volume 82, 2017, https://doi.org/10.1016/j.jnca.2017.01.016.
 
-% Bronnen omtrent redirectie en redistributie van verzoeken. LOAD balancing
-% A. Mourad, Huiqun-Liu, Scalable Web server architectures, in: Proc. of the 2nd IEEE Symposium on Computer and Communications, pp. 12–16, Alexandria, Egypt, July 1997.
-
 % Bronnen omtrent load balancing
 % Yong Meng Teo, Ayani R. Comparison of Load Balancing Strategies on Cluster-based Web Servers. SIMULATION. 2001;77(5-6):185-195. doi:10.1177/003754970107700504
+% A. Mourad, Huiqun-Liu, Scalable Web server architectures, in: Proc. of the 2nd IEEE Symposium on Computer and Communications, pp. 12–16, Alexandria, Egypt, July 1997.
 % G. P. Sarmila, N. Gnanambigai and P. Dinadayalan, "Survey on fault tolerant — Load balancing algorithmsin cloud computing," 2015 2nd International Conference on Electronics and Communication Systems (ICECS), Coimbatore, India, 2015, pp. 1715-1720, doi: 10.1109/ECS.2015.7124879.
 % Dynamische scheduling overheen clusters van servers
 % D. Andersen and T. McCune, Towards a hierarchical scheduling system for distributed WWW server clusters, in: Proc. of the 7th International Symposium on High Performance Distributed Computing, Chicago, IL, July 1998.
