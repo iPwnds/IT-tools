@@ -653,6 +653,66 @@ abstract = {Load balancing is a serious problem in cloud computing that makes it
   note         = {Geraadpleegd op: 26/11/2023},
 }
 
+% Bron omtrent web content adaption
+% Idee dat afgeleverde content aangepast kan worden om overload te verminderen.
+% Succesful laden van minder intensieve content beter dan volledige outage.
+% Idee dat content-adaptie kan geautomatiseerd worden. 
+% Deze techniek is vooral ontworpen om om te gaan met peak loads.
+% Deze techniek is een vorm van overload management op niveau van de
+% individuele server
+@article{abdelzaher1999web,
+  title = {Web content adaptation to improve server overload behavior},
+  journal = {Computer Networks},
+  volume = {31},
+  number = {11},
+  pages = {1563-1577},
+  year = {1999},
+  doi = {https://doi.org/10.1016/S1389-1286(99)00031-6},
+  author = {Abdelzaher, Tarek F. and Bhatti, Nina},
+  abstract = {This paper presents a study of Web content adaptation to improve server overload performance, as well as an implementation of a Web content adaptation software prototype. When the request rate on a Web server increases beyond server capacity, the server becomes overloaded and unresponsive. The TCP listen queue of the server's socket overflows exhibiting a drop-tail behavior. As a result, clients experience service outages. Since clients typically issue multiple requests over the duration of a session with the server, and since requests are dropped indiscriminately, all clients connecting to the server at overload are likely to experience connection failures, even though there may be enough capacity on the server to deliver all responses properly for a subset of clients. In this paper, we propose to resolve the overload problem by adapting delivered content to load conditions to alleviate overload. The premise is that successful delivery of a less resource intensive content under overload is more desirable to clients than connection rejection or failures. The paper suggests the feasibility of content adaptation from three different viewpoints; (a) potential for automating content adaptation with minimal involvement of the content provider, (b) ability to achieve sufficient savings in resource requirements by adapting present-day Web content while preserving adequate information, and (c) feasibility to apply content adaptation technology on the Web with no modification to existing Web servers, browsers or the HTTP protocol.}
+}
+
+% Bron omtrent web content adaption
+% Idee dat afgeleverde content aangepast kan worden om overload te verminderen.
+% Succesful laden van minder intensieve content beter dan volledige outage.
+% Idee dat content-adaptie kan geautomatiseerd worden. 
+% Deze techniek is vooral ontworpen om om te gaan met peak loads.
+% Deze techniek is een vorm van overload management op niveau van de
+% individuele server
+% Michael Gopshtein and Dror G. Feitelson. 2011. Trading off quality for throughput using content adaptation in web servers. In Proceedings of the 4th Annual International Conference on Systems and Storage (SYSTOR '11). Association for Computing Machinery, New York, NY, USA, Article 6, 1–14. https://doi.org/10.1145/1987816.1987824
+@inproceedings{gophstein2011trading,
+  author = {Gopshtein, Michael and Feitelson, Dror G.},
+  title = {Trading off Quality for Throughput Using Content Adaptation in Web Servers},
+  year = {2011},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {10.1145/1987816.1987824},
+  abstract = {A basic problem in managing web servers is capacity planning. A partial solution is to use content adaptation, where the system automatically trades off quality for throughput, e.g. by eliminating graphical decorations and adjusting page layout. We evaluate this approach based on a full implementation in Apache and increasing load patterns. The implementation uses two alternative versions of the files, and employs URL rewriting rules to select which version to use. Triggering a switch from one version to the other is done based on readily available load metrics. The experiments show that throughput can be increased by a factor of 2 to 4 at the price of minor to acceptable deterioration in graphical quality. Increasing throughput by an order of magnitude is also possible, but requires larger compromises. Nevertheless, this is still achievable without a real effect on content. Thus content adaptation is a viable tool, but may be insufficient by itself for handling huge surges in load such as flash crowds.},
+  booktitle = {Proceedings of the 4th Annual International Conference on Systems and Storage},
+  articleno = {6},
+  numpages = {14},
+  location = {Haifa, Israel},
+  series = {{SYSTOR} '11}
+  }
+
+% Dynamisch gecontrolleerde service degradatie.
+% om zo voorziening key services te vrijwaren.
+% Idee dat service degradation vermijdt dat clienten zoals bij admission
+% control worden geweigerd. Het vermindert het niveau van dienstverlening,
+% lagere kwaliteit maar wel nog steeds dienstverlening.
+% Kan manueel maar beter om degradatieplan op te stellen op basis van
+% monitoring en de businesslogica om echt in te spelen op bottlenecks.
+% Kan daardoor ook worden geautomatiseerd.
+@article{wang2012towards,
+author = {Wang, Zi You and Zhou, Ming Hui and Mei, Hong},
+journal = {Science China. Information sciences},
+number = {12},
+pages = {2708-2722},
+title = {Towards a degradation-based mechanism for adaptive overload control},
+volume = {55},
+year = {2012},
+abstract = {Uncontrolled overload is one of the major causes of the system＇s decline in reliability and performance for web applications. It also harms the construction of trustworthy software. This paper presents a degradation- based mechanism to adaptively control overload in complex, dynamic web applications. In our mechanism, the bottlenecks in the application＇s performance are determined by internally monitoring the performance and resource utilization state of the application, which is decomposed into a set of services. After locating the bottlenecks, two decision algorithms are proposed to dynamically and adaptively generate proper degradation plans without delay. By degrading the service which consumes critical resources and has a low priority from the perspective of business logic, the application can keep providing key services even when overload occurs. We implement a prototype and conduct a case study on a wiki application. We also evaluate our approach and demonstrate its effectiveness in simulated overload cases. Through handling overload, we make a breakthrough in building trustworthy software in an open, dynamic and rapidly changing environment.},
+}
 
 % NIET ESSENTIE
 % Dynamische scheduling overheen clusters van servers
@@ -665,31 +725,7 @@ abstract = {Load balancing is a serious problem in cloud computing that makes it
 % Onderstaande bron bespreekt belang van predictie-technieken voor performance
 % en load zodat cloud infrastructuur goed elastisch kan schalen
 % Maryam Amiri, Leyli Mohammad-Khanli, Survey on prediction models of applications for resources provisioning in cloud, Journal of Network and Computer Applications, Volume 82, 2017, https://doi.org/10.1016/j.jnca.2017.01.016.
-
-
-% Bronnen omtrent web content adaption
-% Idee dat afgeleverde content aangepast kan worden om overload te verminderen.
-% Succesful laden van minder intensieve content beter dan volledige outage.
-% Idee dat content-adaptie kan geautomatiseerd worden. 
-% Deze techniek is vooral ontworpen om om te gaan met peak loads.
-% Deze techniek is een vorm van overload management op niveau van de
-% individuele server
-% Tarek F Abdelzaher, Nina Bhatti, Web content adaptation to improve server overload behavior, Computer Networks,
-% Michael Gopshtein and Dror G. Feitelson. 2011. Trading off quality for throughput using content adaptation in web servers. In Proceedings of the 4th Annual International Conference on Systems and Storage (SYSTOR '11). Association for Computing Machinery, New York, NY, USA, Article 6, 1–14. https://doi.org/10.1145/1987816.1987824
-
-
-% Web content adaptie is gerelateerd is dymaische gecontrolleerde service degradatie.
-% Als applicatie uit services bestaat kunnen bottlenecks worden gezocht.
-% Degraderen van services die veel resources gebruiken en lage prioriteit hebben
-% om zo voorziening key services te vrijwaren.
-% Idee dat service degradation vermijdt dat clieenten zoals bij admission
-% control worden geweigerd. Het vermindert het niveau van dienstverlening,
-% lagere kwaliteit maar wel nog steeds dienstverlening.
-% Kan manueel maar beter om degradatieplan op te stellen op basis van montiroing
-% en de businesslogica om echt in te spelen op bottlenecks.
-% Kan daardoor ook worden geautomatiseerd.
-% Wang, Z., Zhou, M. & Mei, H. Towards a degradation-based mechanism for adaptive overload control. Sci. China Inf. Sci. 55, 2708–2722 (2012). https://doi.org/10.1007/s11432-012-4738-9
-% Referenties uit referentielijst van andere bronnnen:
+% Nog meer over degradatie. Referenties uit referentielijst van andere bronnnen:
 % M. Welsh and D. Culler. Adaptive Overload Control for Busy Internet Servers. In Proceedings of the 4th USENIX Conference on Internet Technologies and Systems (USITS'03), pages 26--28, Seattle, WA, March 2003. 
 % A. Fox, S. D. Gribble, E. A. Brewer, and E. Amir. Adapting to Network and Client Variability via On-Demand Dynamic Distillation. In ASPLOS, 1996. 
 
