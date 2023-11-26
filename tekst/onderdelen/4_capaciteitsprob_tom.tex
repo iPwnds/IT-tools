@@ -6,24 +6,25 @@
 
 \section{Capaciteitsproblemen bij overbevraging online diensten}
 
-Deze sectie gaat in op het technische aspect van de problemen bij Ticketmaster,
-door capaciteitstekort en oplossingen daarvoor te bespreken. Aangezien dit
-een algemene IT-problematiek is, die zich voordoet in andere bedrijven en
-sectoren \cite{warren2023chatgpt, warren2020discord, reuters2023what},
-wordt dit algemeen behandeld. 
+Deze sectie gaat in op technische aspecten van de
+Ticketmaster-problemen,
+door capaciteitstekorten en oplossingen daarvoor te bespreken.
+Dit wordt algemeen behandeld,
+angezien het een IT-problematiek is 
+die zich ook voordoet in andere bedrijven en
+sectoren \cite{warren2023chatgpt, warren2020discord, reuters2023what}.
 
 Om een online dienst of website te gebruiken, moeten gebruikers de
-server(s) van die dienst of website bereiken. In die context is er sprake van
+server(s) daarvan bereiken. Er is sprake van
 capaciteitstekort wanneer de serverinfrastructuur onvoldoende systeemresources
 heeft om alle inkomende verzoeken van gebruikers af te handelen.
-Dat kan ertoe leiden dat systemen trager zijn (bv. lange laattijd website),
-slecht functioneren (bv. slechte weergave van site/applicatie) of
-helemaal niet meer werken (bv. foutmeldingen zoals HTTP-statuscode
+Dat kan ertoe leiden dat systemen trager zijn (bv. lange laattijden),
+slecht functioneren (bv. slechte weergave site/applicatie) of
+helemaal niet meer werken (bv. HTTP-statuscode
 503)\footnote{"503 Service Unavailable" \cite{fielding2022http}}
 \cite{guitart2010survey, guitart2007designing}.
-Het probleem kan zich continu voordoen, wanneer de infrastructuur onvoldoende
-is om aan de normale vraag tegemoet te komen,
-of van tijdelijke aard zijn, wanneer belastingspieken niet kunnen worden
+Het probleem kan zich continu voordoen, wanneer normale belasting problemen
+geeft, of van tijdelijke aard zijn, wanneer belastingspieken niet kunnen worden
 opgevangen \cite{schroeder2006web}. Pieken kunnen veroorzaakt worden
 door verschillende soorten verzoeken:
 normale (bv. Black Friday-toeloop \cite{iyer2001overload}),
@@ -31,7 +32,7 @@ onwenselijke (bv. web scraping \cite{thelwall2006web}) of
 malafide (bv. cyberaanval \cite{loukas2009protection}).
 
 Verschillende technieken kunnen capaciteitsproblemen verminderen.
-Hieronder worden de voornaamste vermeld (niet-exhaustief):
+De voornaamste zijn (niet-exhaustief):
 
 \begin{description}
     \item [Verticaal opschalen:] opwaarderen (beschikbare)
