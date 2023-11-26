@@ -52,7 +52,7 @@ Hieronder worden de voornaamste vermeld (niet-exhaustief):
     of database-queryresultaten op snellere opslag (bv. RAM)
     om gebruik systeemresources te verminderen indien gebruikers
     gelijkaardige pagina's of data opvragen
-    \cite{sivasubramanian2007analysis, amazon2023what}
+    \cite{sivasubramanian2007analysis,amazon2023whatiscaching}
     
     \item [Optimaliseren algoritmen en datastructuren:] efficiënte code en
     datastructuren gebruiken minder systeemresources
@@ -76,26 +76,12 @@ extra reduceren:
     \cite{sivasubramanian2007analysis, chenhao2017mitigating,
     colajanni1998dynamic}
     
-    \item [Kwalitatief load balancen:] optimaliseren van de algoritmen die
-    de verzoeken over de verschillende servers verdelen
-    % Notitie:
-    % Zie bron AWS "What is load balancing?"
-    % Load balancer draait op een server / is een server.
-    % Zit tussen gebruiker en groep servers. als faciitator.
-    % Kan traffiek leiden/verdeln en herleiden.
-    % Bij serverproblemen, kan balancer herleiden naar beschikbare servers.
-    % Los van problemen, leidt balancer het verkeer,
-    % waarbij het bottlenecks voorkomt.
-    % Kan ook DDoS-aanvallen tegengaan, door veiligheidsmaatregelen te
-    % te implementeren (op niveau load balancer dus). Het kan traffiek
-    % daarbij blokkeren of intelligent herleiden.
-    % Bij geografische distributie zorgt de load balancer er ook voor
-    % dat de dichtsbijzijnde server wordt gekozen.
-    % Belang van goed load balancingalgoritme (regels die de balancer hanteert)
-    % voor managen van de trafiek. Algortime kan statisch zijn, waarbij
-    % het vaste regels volgt (bv. simpele rotatie). Het kan ook dynamisch zijn,
-    % waarbij het rekening houdt met status van de severs
-    % (bv. herleiden naar server die minst wordt gebruikt)
+    \item [Optimaliseren loadbalancingalgoritmes:] vergelijking opties 
+    en keuze voor dynamische algoritmes die verzoeken efficiënt over
+    servers verdelen o.b.v. omstandigheden
+    \cite{mourad1997scalable, zhou2023comparative, amazon2023whatisload}
+    \footnote{De load balancer zit tussen gebruiker en servers als
+    facilitator die verkeer verdeelt of herleidt \cite{amazon2023whatisload}.}
 
     \item [Automatiseren infrastructuurbeheer en goed monitoren:] vergroten
     flexibiliteit en reactiviteit door automatiseren van opschaling en
