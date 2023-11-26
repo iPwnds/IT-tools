@@ -48,25 +48,12 @@ verhelpen. Hieronder worden de voornaamste vermeld (niet-exhaustief):
     stresstests met gesimuleerde belastingen
     \cite{penaortiz2015generating, penaortiz2013analyzing, penaortiz2015new}
 
-    \item [Cachen:] kan laattijden verminderen.
-    % Notitie:
-    % Zie bron AWS over caching.
-    % Zorgt ervoor dat toekomstige verzoeken voor bepaalde data, sneller kunnen
-    % worden behandeld, doordat high-speed cache wordt geraadpleegd (gebruik
-    % van fast access hardware zoals RAM) in plaats van de primaire opslag
-    % van de server(s). Idee van hoge IOPS. 
-    % Gaat daarbij om subset data die vaak nodig is /
-    % geraadpleegd wordt. Als je cache niet implenteert zou je volledige
-    % database op de standaard hardware moeten opschalen, wat meer kost dan
-    % efficiënte caching. De cache vermindert de load op de backend door
-    % ze te verplaatsen naar de cache, die sneller is.
-    % Cached data kan volgende zijn: resultaten database queries, intensieve
-    % berekeningen, API requests/responses, web artefacten (HTML, js,
-    % afbeeldingen). Best focust op belangrijkste subset bv. indien ticket
-    % voor bepaalde artiest populair, dan vooral die data cachen.
-    % Van belang hier is server-side caching. Zaken zoals web proxy, https
-    % hedaders, web accelartors, stored key/value pairs, database buffers.
-
+    \item [Cachen:] bijhouden (delen van) dynamisch gegenereerde wegpagina's
+    of database-queryresultaten op snellere opslag (bv. RAM)
+    om gebruik systeemresources te verminderen indien gebruikers
+    gelijkaardige pagina's of data opvragen
+    \cite{sivasubramanian2007analysis, amazon2023what}
+    
     \item [Optimaliseren broncode:] optimaliseren van de code van de software
     vermindert de systeemresources die de servers beschikbaar moeten hebben
 
