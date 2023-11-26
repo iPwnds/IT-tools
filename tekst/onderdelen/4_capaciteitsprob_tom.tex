@@ -83,36 +83,27 @@ extra reduceren:
     \footnote{De load balancer zit tussen gebruiker en servers als
     facilitator die verkeer verdeelt of herleidt \cite{amazon2023whatisload}.}
 
-    \item [Automatiseren infrastructuurbeheer en goed monitoren:] vergroten
-    flexibiliteit en reactiviteit door automatiseren van opschaling en
-    configuratie infrastructuur en door extensieve monitoring van belasting
-    % Notitie: Staat doorgaans centraal in DevOps.
-    % Zie bron Microsoft Azure.
-    % Configuratiebeheer, gebruik van hulpprogramma's of IaC
-    % om van configuratie sjablonen te maken zodat configuratie
-    % kan worden geautomatiseerd en complexe omgeving makkelijk kan worden
-    % opgeschaald (systeemresources definiëren in code om snel, herhaalbaar en
-    % controleerbaar te implementeren zonder menselijke fouten. Ook idee
-    % bewakingm waarbij men focust op real-time zichtbaarheid prestaties en
-    % status infrastructuur (telemetrie. metadata en automatische meldingen
-    % voor operatoren).
+    \item [Automatiseren infrastructuurbeheer en goed monitoren:] vergroting
+    flexibiliteit/reactiviteit door extensieve monitoring belasting,
+    automatische opschaling en automatische infrastructuur-configuratie
+    door gebruik 'Infrastructure as Code (IaC)'
+    \footnote{IaC maakt configuraties-sjablonen zodat inzet nieuwe
+    servers wordt geautomatiseerd. \cite{microsoft2023wat}}
+    en hulpprogramma's \cite{microsoft2023wat}
     
-    \item [Gebruikken cloudproviders:] (automatisch) opschalen vereenvoudigen
-    door gebruiken van cloudinfrastructuur.
-    % Notitie: Staat doorgaans ook centraal in DevOps.
-    % Zie opnieuwe bron Microsoft Azure.  
-    % Cloud biedt flexibiliteit waarbij je snel omgevingen in verschillende
-    % geografische locaties kunt opstarten, configureren en weer afsluiten
-    % afhankelijk van noden.
+    \item [Gebruiken cloudproviders:] (automatisch) gebruik flexibiliteit
+    cloudinfrastructuur die snel
+    servers in verschillende locaties
+    kan starten, configureren en afsluiten ('Infrastructure as a Service') 
+    \cite{microsoft2023wat, gandhi2018modeldriven, hwang2014scaleout,
+    chenhao2017mitigating}
+
 \end{description}
 
 
-% TODO: Misschien nog behandelen: welke technieken gebruikt Ticketmaster al?
-% TODO: Referenties
-% TODO: Toevoegen prioritiseren van bepaalde requests als techniek
-% Gaat volgende tegen: Clients can experience outages. Even though,
-% there may be enough capacity to deliver all responses for subset of clients,
-% all clients normally experience some issues.
+
+
+
 % TODO: Vermelden dat we specifiek focussen op wat bedrijven zelf kunnen doen.
 % Want ook fundamenteler kan er op besturingssysteemniveau iets gedaan worden
 % voor betere resource allocation:
