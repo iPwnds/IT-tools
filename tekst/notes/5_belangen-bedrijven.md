@@ -1,5 +1,8 @@
 Zoektermen:
+- concert ticket pricing
+- capacity allocation
 - ticket market ticketmaster
+- secondary market
 - 
 
 Termen:

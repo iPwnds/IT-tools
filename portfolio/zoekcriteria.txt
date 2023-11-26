@@ -45,3 +45,9 @@ Overblijvende potentieel goede concrete zoektermenen:
 - disruptions
 - load / load balancing / load distribution
 - dos (denial-of-service attack)
+
+Zoektermen gebruikt op Google Scholar om artikels te vinden omtrent
+de belangen van ticketsysteem bedrijven:
+- concert ticket pricing
+- capacity allocation
+- secondary market
