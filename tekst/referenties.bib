@@ -281,8 +281,6 @@ year = {2006}
     year            = {2009},
 }
 
-% SCHALING
-
 % Geeft duidelijke beschrijving horizontale vs. verticale schaling
 % "Horizontal scaling refers to changing the number of servers (physical or
 % virtual) hosting an Internet service or a multi-tier application"
@@ -411,7 +409,60 @@ year = {2006}
   year            = {2015},
 }
 
+% Bron omtrent caching en alternatieven daarvoor die soms neerkomen op
+% opschalen, maar soms ook niet. Bron kan gebruikt worden voor bespreking
+% website caching en caching van database queries. Rest wordt afgedekt
+% door bronnen omtrent schaling.
+% Idee dat caching vaak gebruikt wordt om snelheid te vergroten.
+% Veel web content tegenwoordig dynamisch gegeneerd, wat langer duurt
+% om request af te handelen dan bij statische pagina.
+% Bij web page caching worden (delen) pagina gecachet voor latere verzoeken.
+% Pagina's mogen dan niet te uniek zijn.
+% Kan gecombineerd worden met geografische spreiding (CDNs) om te cachen
+% dicht bij gebruikers.
+% Alternatieven voor caching in geval meer gepersonaliseerde en dynamische
+% sites zijn:
+% Code-replicatie: edge computing waarbij applicatiecode gerepliceerd en
+% uitgevoerd op meerdere servers. Is eigenlijk horizonatale schaling van enkel
+% de compute, niet database.
+% Database replicatie: ook bijhouden identieke kopie database bij
+% edge servers. Is simpelweg horizontale schaling.
+% Cachen database query resultaten: edge servers behouden
+% partiele kopie database of gewoon simpelweg resultaten exacte queries
+@article{sivasubramanian2007analysis,
+  author          = {Sivasubramanian, Swaminathan and Pierre, Guillaume and van Steen, Maarten and Alonso, Gustavo},
+  title           = {Analysis of Caching and Replication Strategies for Web Applications}, 
+  journal         = {{IEEE} Internet Computing}, 
+  volume          = {11},
+  number          = {1},
+  pages           = {60-66},
+  doi             = {10.1109/MIC.2007.3},
+  abstract        = {Developers often use replication and caching mechanisms to enhance Web application performance. The authors present a qualitative and quantitative analysis of state-of-the art replication and caching techniques used to host Web applications. Their analysis shows that selecting the best mechanism depends heavily on data workload and requires a careful review of the application's characteristics. They also propose a technique for Web practitioners to compare different mechanisms' performance on their own},
+  year            = {2007},
+  }
 
+% Website omtrent caching van AWS.
+% Zorgt ervoor dat toekomstige verzoeken voor bepaalde data, sneller kunnen
+% worden behandeld, doordat high-speed cache wordt geraadpleegd (gebruik
+% van fast access hardware zoals RAM) in plaats van de primaire opslag
+% van de server(s). Idee van hoge IOPS. 
+% Gaat daarbij om subset data die vaak nodig is /
+% geraadpleegd wordt. Als je cache niet implenteert zou je volledige
+% database op de standaard hardware moeten opschalen, wat meer kost dan
+% efficiënte caching. De cache vermindert de load op de backend door
+% ze te verplaatsen naar de cache, die sneller is.
+% Cached data kan volgende zijn: resultaten database queries, intensieve
+% berekeningen, API requests/responses, web artefacten (HTML, js,
+% afbeeldingen). Best focust op belangrijkste subset bv. indien ticket
+% voor bepaalde artiest populair, dan vooral die data cachen.
+% Van belang hier is server-side caching. Zaken zoals web proxy, https
+% headers, web accelerators, stored key/value pairs, database buffers.
+@misc{key,
+  author       = {Amazon Web Services Inc.},
+  title        = {What is Caching and How it Works},
+  howpublished = {\url{https://aws.amazon.com/caching/}},
+  note         = {Geraadpleegd op: 26/11/2023},
+}
 
 % Bronnen omtrent web content adaption
 % Idee dat afgeleverde content aangepast kan worden om overload te verminderen.
@@ -510,9 +561,6 @@ B. Urgaonkar and P. Shenoy. Cataclysm: Policing Extreme Overloads in Internet Ap
 % Gebruik van systeem dat lange verzoeken die veel resources gebruiken
 % beeindigt.
 % Jingyu Zhou and Tao Yang. 2006. Selective early request termination for busy internet services. In Proceedings of the 15th international conference on World Wide Web (WWW '06). Association for Computing Machinery, New York, NY, USA, 605–614. https://doi.org/10.1145/1135777.1135866
-
-% Bronnen omtrent caching
-% S. Sivasubramanian, G. Pierre, M. van Steen, and G. Alonso, "Analysis of caching and replication strategies for web applications". IEEE Internet Comput. 11(1), pp. 60--66, Jan--Feb 2007.
 
 % Scheduling als techniek zoals admission control en adaptive degradation
 % technieken zijn. Differentieren tussen requests obv duur en short
