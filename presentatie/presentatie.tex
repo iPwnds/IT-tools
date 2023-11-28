@@ -1,3 +1,4 @@
+% Algemene settings
 \documentclass{beamer}
 \usepackage[dutch]{babel}
 \usepackage{graphicx}
@@ -12,7 +13,7 @@
 
 % ToC aan begin elke subsectie (indien te vaak verander
 % naar section)
-\AtBeginSubsection[]
+\AtBeginSection[]
 {
   \begin{frame}<beamer>{Inhoud}
   \small
@@ -27,6 +28,7 @@
 \date[IW]{\small{Informaticawerktuigen - 29 november 2023}}
 \logo{\includegraphics[height = 1cm]{kul-logo.png}}
 
+
 % Start slides
 \begin{document}
 
@@ -34,26 +36,40 @@
   \titlepage
 \end{frame}
 
+
+\section[Intro]{Introductie}
+\begin{frame}{Introductie}
+% TEKST (draft)
+% ==============
+% Begroeting.
+% Zeggen waarover de presentatie gaat.
+% Vermelden aanleiding:
+    % In 2022 ontstond ophef vanwege de chaotische online ticketverkoop voor 
+    % Taylor Swift-concerten door Ticketmaster. Het Amerikaanse bedrijf werd
+    % geconfronteerd met capaciteitsproblemen doordat veel fans tegelijkertijd
+    % zijn website wilden raadplegen.
+% Uitleggen dat vaker voorkomt bij online diensten, zowel door normale pieken als door zaken zoals DoS-aanvallen.
+% Idee dat dit belangrijke gevolgen heeft: kosten, ontevredenheid
+% We zullen daarom dit, dit en dat bespreken.
+\begin{itemize}
+    \item Chaos bij ticketverkoop Swift in 2022
+    \item Capaciteitsproblemen bij Ticketmaster
+    \item Geen alleenstaand geval
+    \item Mogelijke oorzaken: normaal gebruik site/app, gebruikspieken, cyberaanval ...
+    \item Mogelijke gevolgen: inkomstenverlies, imagoschado, ontevredenheid, veiligheidsrisico's ...
+\end{itemize}
+\begin{center}
+    \includegraphics[height = 2.5cm]{ticketmaster-logo.png}
+    \includegraphics[height = 2.5cm]{taylor-swift.png}
+    \includegraphics[height = 2.5cm]{server-rack.jpg}
+\end{center}
+\end{frame}
+
+
 \begin{frame}{Inhoud}
   \tableofcontents
 \end{frame}
 
-\section[Intro]{Introductie}
-\begin{frame}{Introductie}
-%In 2022 ontstond ophef vanwege de chaotische online ticketverkoop voor 
-%Taylor Swift-concerten door Ticketmaster. Het Amerikaanse bedrijf werd
-%geconfronteerd met capaciteitsproblemen doordat veel fans tegelijkertijd
-%zijn website wilden raadplegen. Die storingen hebben ook gevolgen, namelijk ontevredenheid en die van verschillende aard zijn zolas inkomstenverlies bij onbereikbaarheid e-commerceplatformen eiligheidskosten bij ontoegankelijkheid informatie tijdens rampen enz. Daarom gaan we vandaag drie belangrijke vragen beantwoorden. "Wat zijn capaciteitsproblemen en hun mogelijke oplossingen?",
-%"Hoe worden belangen van bedrijven en klanten geïmpacteerd door de marktsituatie en capaciteitsproblemen?" en "In welke mate is er economisch machtsmisbruik en welke maatregelen kunnen dat verhinderen?"
-    \begin{itemize}
-        \item Taylor Swifts concert
-        \item Capaciteitsproblemen
-        \item Gevolgen
-        \item Oplossingen
-        \item Belangen van bedrijven en klanten
-        \item Economische machtsmisbruik
-    \end{itemize}
-\end{frame}
 
 \section[Casus Taylor]{Casus: Taylor Swift} %??
 \begin{frame}{Casus: Taylor Swift}
