@@ -39,7 +39,6 @@
 
 
 \section[Intro]{Introductie}
-\begin{frame}{Introductie}
 % TEKST (draft)
 % ==============
 % Begroeting.
@@ -52,41 +51,50 @@
 % Uitleggen dat vaker voorkomt bij online diensten, zowel door normale pieken als door zaken zoals DoS-aanvallen.
 % Idee dat dit belangrijke gevolgen heeft: kosten, ontevredenheid
 % We zullen daarom dit, dit en dat bespreken.
-\begin{itemize}
-    \item Taylor Swifts concert
-    \item Capaciteitsproblemen
-    \item Gevolgen
-    \item Oplossingen
-    \item Belangen van bedrijven en klanten
-    \item Economische machtsmisbruik
-\end{itemize}
+\begin{frame}{Introductie}
+    \begin{itemize}
+        \item Chaos bij ticketverkoop Swift in 2022
+        \item Capaciteitsproblemen bij Ticketmaster
+        \item Geen alleenstaand geval
+        \item Mogelijke oorzaken: normaal gebruik site/app, gebruikspieken, cyberaanval ...
+        \item Mogelijke gevolgen: inkomstenverlies, imagoschado, ontevredenheid, veiligheidsrisico's ...
+    \end{itemize}
+    \begin{center}
+        \includegraphics[height = 2.5cm]{ticketmaster-logo.png}
+        \includegraphics[height = 2.5cm]{taylor-swift.png}
+        \includegraphics[height = 2.5cm]{server-rack.jpg}
+    \end{center}
 \end{frame}
+
+
 \begin{frame}{Inhoud}
   \tableofcontents
 \end{frame}
 
 
-\section[Casus Taylor]{Casus: Taylor Swift} %??
-\begin{frame}{Casus: Taylor Swift}
-    \begin{itemize}
-        \item Taylor swifts Eras Tour
-        \item Verwachte best verkochte tour
-        \item Fans woedend: lange wachttijden, hoge prijzen
-        \item Politieke backlash
-        \item Monopolische macht van Ticketmaster
-    \end{itemize}
+\section[Actualiteitsproblemen]{Actualiteitsproblemen ticketsector}
+% TEKST (draft)
+% ==============
 % Ticketmaster werd recentelijk bekritiseerd door de uitverkoop van Taylor Swift's Eras Tour in november 2022. 
-%Deze tour werd voorspeld als een van de best verkochte in de geschiedenis, als de comeback na Swift's eerdere succesvolle
+% Deze tour werd voorspeld als een van de best verkochte in de geschiedenis, als de comeback na Swift's eerdere succesvolle
 % Reputation-wereldtournee. Ticketmaster meldde meer dan 14 miljoen bezoekers op hun site tijdens de voorverkoop, maar beweerde slechts
 % 1,5 miljoen toegangscodes te hebben uitgegeven. Fans waren verontwaardigd over lange wachttijden, een haperend systeem, tekort aan
 % tickets en abrupte prijsstijgingen. Politiek gezien riep vertegenwoordiger Alexandria Ocasio-Cortez op tot verzet tegen Ticketmaster
 % en benoemde het een monopolie door de fusie met LiveNation, waarbij de enorme prijsstijgingen en wachtrijen als voornaamste redenen
 % werden aangehaald. Met meer dan 70% controle op de markt, kan Ticketmaster zijn macht misbruiken zonder concurrentie, zoals duidelijk
 % werd tijdens de uitverkoop van de Eras Tour.
+\begin{frame}{Actualiteitsproblemen ticketsector}
+    \begin{itemize}
+        \item Taylor Swift - Eras Tour
+        \item Verwachtte best verkochte tour
+        \item Fans woedend door lange wachttijden, hoge prijzen ...
+        \item Politieke backlash
+        \item Kritiek op marktpositie Ticketmaster
+    \end{itemize}
 \end{frame}
 
-\section[Capaciteit]{Capaciteitsproblemen bij overbevraging}
-\begin{frame}{Capaciteitsproblemen bij overbevraging}
+\section[Capaciteitsproblemen]{Capaciteitsproblemen bij overbelasting online diensten}
+\begin{frame}{Capaciteitsproblemen bij overbelasting online diensten}
     \begin{itemize}
         \item Overbevraging
         \item Capaciteitstekorten
@@ -111,13 +119,22 @@
 
     \subsection{}
     \begin{frame}{Marktsituatie en concurrentie}
-        \begin{itemize}
-            \item Primaire ticketverkoper
-            \item Secundaire markt
-        \end{itemize}
-        \begin{figure}
-            \includegraphics[width=30px,height=30px,keepaspectratio]{ticketmaster-logo}            
-        \end{figure}
+        \begin{columns}
+            \begin{column}{.4\textwidth}
+                \begin{itemize}
+                    \item Primaire ticketverkoper
+                    \item Secundaire markt
+                \end{itemize}
+            \end{column}
+            \begin{column}{.6\textwidth}
+                \begin{figure}
+                    \includegraphics[width=50px,height=50px,keepaspectratio]{ticketmaster-logo.png}
+                \end{figure}
+                \centering
+                \includegraphics[width=45px,height=45px,keepaspectratio]{stubhub-logo.png}
+                \includegraphics[width=45px,height=45px,keepaspectratio]{eventbrite-logo.png}
+            \end{column}
+        \end{columns}
     \end{frame}
     
     \subsection{}
@@ -140,7 +157,7 @@
 
 % Een dominante speler in de primaire ticketverkoop is Ticketmaster. Als primaire marktverkoper betekent dit dat 
     % zij tickets rechtstreeks verkopen die aan hun zijn toegewezen door evenementpartners. Aan de andere kant, in de 
-    % secundaire markt, verkopen concurrenten zoals Eventbrite en StubHub reeds verkochte primaire tickets.
+    % secundaire markt, verkopen concurrenten zoals Eventbrite en StubHub reeds verkochte primaire tickets, meestal aan een hogere prijs.
 
 % Maar hoe streven deze bedrijven dan naar winstmaximalisatie? Hoewel concurrerende sites op het eerste gezicht mogelijk als 
     % negatief worden beschouwd, is het tegendeel waar. Bijvoorbeeld, Live Nation, het moederbedrijf van Ticketmaster, heeft 
