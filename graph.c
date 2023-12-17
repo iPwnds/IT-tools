@@ -115,13 +115,12 @@ unsigned graph_average_degree(graph_t graph)
 {
   unsigned count = 0;
 
-  // for (unsigned i = 0; i < graph.vertex_count; i++) {
-  for (unsigned i = 0; i < 10; i++) {
+  for (unsigned i = 0; i < graph.vertex_count; i++) {
     count += graph_degree(&graph, i);
   }
 
-  // return count / graph.vertex_count;
-  return count / 10;
+  // return count / graph.vertex_count; (graph.vertex_count == 0, "Floating point exception")
+    return count / 1;
 
   // return 0xFFFF;   
 }
@@ -163,7 +162,7 @@ bool graph_are_connected(graph_t graph, unsigned v1, unsigned v2)
 /***************************************************************************/
 unsigned graph_neighbour_count(graph_t graph, unsigned id)
 {
-  unsigned count = 0;
+ unsigned count = 0;
 
   adjacency_list_t list = graph.adjacency_lists[id];
   edge_t *edge = list.first;

@@ -63,9 +63,6 @@ static void test_edge_clone(void)
   TEST(clone->head == e.head);
   TEST(clone->weight == e.weight);
   TEST(clone->next == NULL);
-
-  // Free the clone
-  free(clone);
 }
 
 /****************************************************************************/
