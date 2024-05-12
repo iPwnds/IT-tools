@@ -1,0 +1,4 @@
+include:
+  - project: 'distrinet/education/informaticawerktuigen/meta/public-resources'
+    file:
+    - '/ci/js-ci.yml'

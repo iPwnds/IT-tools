@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="code.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+    <body>
+        <div class="items">
+            <div>
+                <h2>Score: &nbsp</h2><h2 id="score">0</h2>
+            </div>
+            <div>
+                <h2>Levens: &nbsp</h2><h2 id="health">3</h2>
+            </div>
+            <div>
+                <h2>Tijd: &nbsp</h2><h2 id="time">00:00:00</h2>
+            </div>
+            <button onclick="reset()">RESET</button>
+        </div>
+        <div id="puzzle" oncontextmenu="return false;"></div>
+    </body>
+</html>

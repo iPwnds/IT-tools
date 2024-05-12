@@ -1,0 +1,88 @@
+/* body styling */
+body{
+    background-color: #F3EEEA;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* text styling */
+h1{
+    text-align: center;
+    font-size: 2em;
+    color: #776B5D;
+    margin: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* button styling */
+button {
+    background-color: #B0A695;
+    color: #776B5D;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    height: 2.5em;
+    width: 5em;
+    align-self: center;
+    font-size: 1em;
+}
+
+/* table styling */
+table {
+    font-size: 1em;
+    background-color: #EBE3D5;
+    border-spacing: 0.5em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    margin: auto;
+    cursor: default;
+}
+
+/* cells styling */
+td {
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    background-color: #B0A695;
+    color: #B0A695;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+/* colors */
+.hidden {
+    background-color: #776B5D;
+    color: #776B5D;
+}
+
+.visible {
+    background-color: #B0A695;
+    color: #776B5D;
+    font-weight: bold;
+}
+
+/* sizing */
+.vertical {
+    width: 4em;
+}
+
+.horizontal {
+    height: 4em;
+}
+
+/* alignement */
+.items {
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+    font-size: 1em;
+    margin: 1em;
+    color: #776B5D;
+}
+
+.items > div {
+    display: flex;
+    justify-content: space-between;
+}
