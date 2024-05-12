@@ -1,0 +1,49 @@
+Links en sources:
+- https://ieeexplore.ieee.org/abstract/document/5254230 (Wetenschapp)
+
+- https://www.usenix.org/legacy/events/ec98/full_papers/fujimura/fujimura.pdf 
+
+- https://dl.acm.org/doi/pdf/10.1145/336992.337020 (wetenschapp.)
+
+- https://arxiv.org/ftp/arxiv/papers/2202/2202.06213.pdf (wetenschapp.)
+
+- https://www.researchgate.net/publication/334123740_Ticketing_System (wetenschapp.)
+
+- https://www.parool.nl/nederland/ticketmaster-onder-vuur-om-omstreden-doorverkoop-lowlandskaarten-dit-slaat-nergens-op~b92b509e/?referrer=https://www.google.com/ (gewoon artikel met extra info)
+
+- https://www.linkedin.com/advice/3/how-can-you-optimize-ticketing-system-performance#:~:text=One%20of%20the%20best%20ways,affect%20your%20customers%20and%20agents.
+ (Hoe optimaliseer je een ticketingsysteem?)
+
+- https://finmodelslab.com/blogs/how-much-makes/how-much-business-owner-makes-online-ticketing#:~:text=The%20transactional%20model%20adopted%20by,in%20the%20online%20ticketing%20industry.
+ (profit voor grote event spelers)
+
+- https://abcnews.go.com/Politics/ticketmasters-taylor-swift-ticket-fiasco-spurs-new-senate/story?id=96609996 (Nieuws artikel)
+
+
+- https://engineeringenablement.substack.com/p/when-taylor-swift-crashed-ticketmaster
+(gewoon artikel, hoe de capaciteitsproblemen vermijden)
+
+- https://academic.oup.com/jcle/article/2/3/533/872442?login=true
+(wetenschappelijk artikel, machtsmisbruik ticketmaster)
+
+- https://www.investopedia.com/is-ticketmaster-a-monopoly-6834539
+(Is ticketmaster een monopoly?)
+ 
+ - https://ieeexplore.ieee.org/abstract/document/7907509 (advantages and disadvantages for the user, wetenschapp)
+
+referenties voor H6
+https://www.nytimes.com/2022/11/18/technology/live-nation-ticketmaster-investigation-taylor-swift.html
+
+https://www.cnbc.com/2023/06/08/lawmakers-introduce-ticket-act-requiring-disclosure-of-ticketing-fees.html
+
+https://www.makeuseof.com/tag/6-strong-alternatives-ticketmaster-buying-event-tickets/
+
+https://en.wikipedia.org/wiki/Taylor_Swift%E2%80%93Ticketmaster_controversy
+
+Referenties voor H7
+
+https://www.similarweb.com/top-websites/e-commerce-and-shopping/tickets/
+
+https://en.wikipedia.org/wiki/Ticketmaster
+
+https://www.investopedia.com/is-ticketmaster-a-monopoly-6834539#:~:text=What%20is%20Ticketmaster%27s%20market%20share,by%20far%20the%20industry%20leader.

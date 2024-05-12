@@ -1,0 +1,15 @@
+De paper beantwoordt volgende (onderzoeks)vragen:
+
+- Vragen m.b.t. capaciteitsproblemen in het algemeen (overbelasting servers /
+online diensten)
+    - Wat zijn capaciteitsproblemen en hoe worden ze veroorzaakt?
+    - Hoe kunnen capaciteitsproblemen worden opgelost?
+- Vragen m.b.t. de casus van ticketverkoop:
+    - Hoe ziet het landschap van online ticketverkoop eruit en hoeveel macht
+    hebben de actieve bedrijven?
+    - Welke belangen hebben de bedrijven en klanten?
+    - Hoe worden die belangen geïmpacteerd door de marktsituatie (enkele
+    grote spelers) en de capaciteitsproblemen?
+    - In welke mate en op welke wijze is er sprake van machtsmisbruik door
+    de bedrijven?
+    - Welke maatregelen kunnen er genomen worden om machtmisbruik te verhinderen?

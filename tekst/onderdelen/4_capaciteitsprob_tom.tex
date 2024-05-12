@@ -1,0 +1,121 @@
+% De verschillende secties moeten mooi overgaan in elkaar.
+% Hiervoor gebruik je bindteksten. Deze tekstjes zijn typisch de eerste
+% paragrafen van de verschillende (sub)secties en leggen uit wat de
+% bedoeling van de sectie is, en eventueel hoe dat relateert aan
+% de vorige sectie of hoe het past in het grotere geheel.
+
+\section{Capaciteitsproblemen bij overbevraging}
+
+Deze sectie gaat in op de technische aspecten,
+door capaciteitstekorten en oplossingen daarvoor te bespreken.
+Dit wordt algemeen behandeld,
+aangezien het een IT-problematiek is 
+die zich ook voordoet in andere bedrijven en
+sectoren \cite{warren2023chatgpt, warren2020discord, reuters2023what}.
+
+Om een online dienst/website te gebruiken, moeten gebruikers de
+server(s) daarvan bereiken. Er is sprake van
+capaciteitstekort wanneer de serverinfrastructuur onvoldoende systeemresources
+heeft om alle inkomende verzoeken af te handelen.
+Dat kan ertoe leiden dat systemen trager zijn (bv. laattijden),
+slecht functioneren (bv. slechte weergave site/applicatie) of
+niet meer werken (bv. HTTP-statuscode
+503)\footnote{"Service Unavailable" \cite{fielding2022http}}
+\cite{guitart2010survey, guitart2007designing}.
+Het probleem kan continu zijn, wanneer normale belasting problemen
+geeft, of slechts tijdelijk, wanneer belastingspieken niet kunnen worden
+opgevangen \cite{schroeder2006web}. Pieken kennen verschillende oorzaken:
+normale (bv. Black Friday-toeloop \cite{iyer2001overload}),
+onwenselijke (bv. web scraping \cite{thelwall2006web}) en
+malafide (bv. cyberaanval \cite{loukas2009protection}).
+
+De voornaamste technieken tegen capaciteitsproblemen zijn:
+
+\begin{description}
+    \item [Verticaal opschalen:] opwaarderen (beschikbare)
+    systeemresources huidige server(s) of virtuele machine(s)
+    (bv. geheugen, processors en bandbreedte)
+    \cite{lu2014applicationdriven, michael2007scaleup, appuswamy2013scaleup}
+
+    \item [Horizontaal opschalen:] voorzien meerdere servers of virtuele
+    machines, waarover verzoeken worden verdeeld
+    \cite{lu2014applicationdriven, michael2007scaleup}
+
+    \item [Evalueren en simuleren:] (toekomstige) noden inschatten
+    via prestatie-evaluaties infrastructuur, inclusief
+    stresstests met gesimuleerde belastingen
+    \cite{penaortiz2015generating, penaortiz2013analyzing, penaortiz2015new}
+
+    \item [Cachen:] bijhouden (delen van) dynamisch gegenereerde wegpagina's
+    of database-queryresultaten op snellere opslag (bv. RAM)
+    om gebruik systeemresources te verminderen indien gebruikers
+    gelijkaardige pagina's of data opvragen
+    \cite{sivasubramanian2007analysis,amazon2023whatiscaching}
+    
+    \item [Optimaliseren algoritmen en datastructuren:] efficiënte code en
+    datastructuren gebruiken minder systeemresources
+    \cite{feitelson2015introduction}
+
+    \item [Optimaliseren software-architectuur en -ontwerp:] hogere
+    efficiëntie \cite{feitelson2015introduction} en
+    opschalingsopportuniteiten via weldoordachte
+    architecturen en ontwerpen (bv. microservices-benadering waarbij modulaire
+    services onafhankelijk worden opgeschaald o.b.v. noden)
+    \cite{coulson2020adaptive, thones2015microservices}
+
+    \item [Adapteren site-/applicatieinhoud:]
+    aflevering minder (resource-intensieve) inhoud
+    (bv. belangrijkste informatie, lagere resoluties)
+    bij piekbelasting
+    \cite{andersson2006design, abdelzaher1999web, gophstein2011trading}
+
+    \item [Selectief degraderen:]
+    degradatie resource-intensieve maar minder prioritaire software-modules
+    t.v.v. essentiële dienstverlening
+    \cite{wang2012towards}
+
+    \item [Beveiligen tegen cyberaanvallen:] detectie en afweer malafide
+    verzoeken \cite{loukas2009protection}
+    (bv. op niveau load balancer \footnote{Zie infra voor definitie.}
+    \cite{amazon2023whatisload})
+
+
+\end{description}
+
+Specifieke implementaties van opschalen en cachen kunnen capaciteitsproblemen
+extra reduceren:
+
+\begin{description}
+    \item [Geografisch distribueren:] opschalen of cachen via
+    geografisch verspreidde servers voor snellere, regionalere connecties
+    \cite{sivasubramanian2007analysis, chenhao2017mitigating,
+    colajanni1998dynamic}
+    
+    \item [Optimaliseren loadbalancingalgoritmes:] vergelijking opties 
+    en keuze voor dynamische algoritmes die verzoeken efficiënt over
+    servers verdelen o.b.v. omstandigheden
+    \cite{mourad1997scalable, zhou2023comparative, amazon2023whatisload}
+    \footnote{De load balancer zit tussen gebruiker en servers als
+    facilitator die verkeer verdeelt of herleidt \cite{amazon2023whatisload}.}
+
+    \item [Automatiseren infrastructuurbeheer en goed monitoren:] vergroting
+    flexibiliteit/reactiviteit door extensieve monitoring belasting,
+    automatische opschaling en automatische infrastructuur-configuratie
+    door gebruik 'Infrastructure as Code (IaC)'
+    \footnote{IaC maakt configuratie-sjablonen zodat inzet nieuwe
+    servers wordt geautomatiseerd. \cite{microsoft2023wat}}
+    en hulpprogramma's \cite{microsoft2023wat}
+    
+    \item [Gebruiken cloudproviders:] (automatisch) gebruik flexibiliteit
+    cloudinfrastructuur die snel
+    servers in verschillende locaties
+    kan starten, configureren en afsluiten ('Infrastructure as a Service') 
+    \cite{microsoft2023wat, gandhi2018modeldriven, hwang2014scaleout,
+    chenhao2017mitigating}
+
+\end{description}
+
+Schadebeperking bij onvermijdbare overbelasting
+(bv. selectieve terminatie en admissiecontrole) en maatregelen op
+besturingssysteem-/kernelniveau (bv. resource-allocatie)
+vallen buiten bestek van deze paper.

@@ -1,0 +1,73 @@
+Tekstdraft
+==========
+
+4. Belangen voor klanten/gebruiker
+Ticketsystemen hebben ten opzichte van de gebruiker een hele boel voordelen en nadelen. Dit komt ook mede doordat er veel factoren komen kijken bij het maken van ticketsystemen. 
+Deze voor- en nadelen kunnen de belangen van een klant toe- en tegenwerken. Een aantal van deze voor en nadelen worden beknopt besproken. 
+
+4.1 Voordelen
+De meeste voordelen van zulke ticketsystemen zijn redelijk voor de hand liggend, bv. minder gebruik van papier door deze online tickets.
+Maar sommige voordelen maken ticketsystemen nog interesanter voor de gebruiker, zoals de gebruiksvriendelijkheid die deze systemen met zich meebrengen.
+Makers van ticketsystemen designen deze zodanig dat het systeem gemakkelijk te gebruiken is door klanten en dat gebruikers zich gemakkelijk kunnen navigeren.
+Ze designen het ook zodanig dat de gebruiker zo efficiënt en gemakkelijk mogelijk hun ticket kunnen aankopen. Tickets verschijnen meestal ook direct na aankop 
+in de mailbox van klanten zodat ze zeker zijn van hun aankoop, als dit niet zo verloopt is er nog altijd een helpdesk aanwezig bij de meeste ticketsystemen. 
+Gebruikers kunnen altijd (meestal 24/7) terecht bij zo een helpdesk, dus er is hulp ter beschikking wanneer er dan toch iets zou foutlopen.
+Eens dat de gebruiker een ticket heeft gekocht kan hij/zij ook heel gemakelijk zien wat de status van hun ticket en aan de hand van real-time updates kijken of er iets niet klopt bij de aankoop.
+Nog een groot voordeel van ticketsystemen voor de gebruiker is dat de ticketsystemen altijd en overal beschikbaar zijn voor de klant,
+online ticketsystemen zijn altijd toegankelijk zolang de gebruiker een verbinding met het internet heeft natuurlijk. 
+Klanten kunnen zelfs nog last minut tickets kopen als deze nog beschikbaar zijn. 
+ 
+
+4.2 Nadelen
+Natuurlijk komen er bij ticketsystemen ook heel wat nadelen kijken die de belangen van een gebruiker kunnen verhinderen. Doordat deze ticketsystemen meestal online zijn is het dus nodig om een stabiele internetverbinding te hebben.
+Sommige gebruikers hebben dit misschien niet waardoor er heel wat kan fout gaan door een verbinding die de hele tijd wegvalt tijdens het aankopen van tickets. Ookal worden ticketsystemen gedesigned voor een gemakkleijk gebruik,
+hebben gebruikers toch een kleine technische aanleg nodig, online systemen gebruiken is minder voor de hand liggend voor bv. oudere mensen die nog niet echt bekend zijn met het internet.
+Omdat deze ticketsystemen meestal via website zijn kunnen deze bij een hoog aantal gebruikers crashen, waardoor al de gebruikers het ticketsysteem niet kunnen gebruiken. Dit geldt niet voor alle ticketsystemen, de meeste hebben al grote servers de veel website bezoekers aankunnen.
+Een nadeel dat tijdens het betalen van de tickets zich kan voordoen, is dat er een hoop fees en/of commissies kunnen worden opgelegt door de ticketing maatschapij voor sercvice etc., waardoor de prijs wel eens kan oplopen. 
+Gebruikers kunnen ook ondervinden dat er soms maar een aantal beperkte betaalmethodes zijn die misschien niet voor de gebruiker werken. Als het betalen dan toch gelukt is kan het ook zijn dat de gebruiker niet nauwkeurig genoeg is geweest en dat de persoonlijke info op het ticket niet klopt.
+Dit is iedereen wel eens overkomen maar sommige ticketsystemen hebben geen of een slechte refund policy waardoor de klant geld verliest of niet alles krijgt terugbetaald. 
+
+
+Ticketsystemen hebben dus zeker en vast een hoop voor en nadelen die de belangen van de gebruiker voor-of tegenwerken, maar over het algemeen zijn ze gemakkelijker en efficiënter in gebruik. 
+Elke gebruik heeft de vrijheid
+
+Notities
+========
+
+Nadelen
+-------
+
+Nadelen van grote spelers:
+
+https://thehustle.co/the-sneaky-economics-of-ticketmaster/
+
+https://www.quora.com/What-are-the-main-types-of-online-ticketing-systems-for-events-concerts-etc-What-are-the-pros-and-cons-of-each-type-Which-one-do-you-prefer-and-why
+- Hoge service fees en commissies
+- Internet connectiviteit, serverdowntime
+- high cost of implementation and maintenance, and the need for technical expertise to operate and manage the system
+
+https://www.lcarscom.net/advantages-and-disadvantages-of-booking-concert-tickets-online/
+- Bookings errors
+
+- Crashes zijn onhadnig voor de klanten, deze klagen misschien aan.
+
+
+Voordelen
+---------
+
+voordelen: 
+https://www.cm.com/nl-be/blog/e-ticketing-5-voordelen/
+Gebruiksvriendelijk;
+Inzichtelijk;
+Communicatief;
+Persoonlijk;
+Altijd mogelijk.
+
+https://www.similarweb.com/top-websites/e-commerce-and-shopping/tickets/
+
+voordelen gebruikte links: 
+https://www.cm.com/nl-be/blog/e-ticketing-5-voordelen/
+
+https://www.deskdirector.com/dd-blog/10-benefits-of-an-online-ticketing-system
+
+

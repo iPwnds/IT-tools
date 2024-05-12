@@ -1,0 +1,119 @@
+% Variabelen gebruikt in template.
+\newcommand{\titletext}{Capaciteitsproblemen bij online ticketverkoop}
+\newcommand{\subtitletext}{Oorzaken, gevolgen en oplossingen}
+\newcommand{\logopath}{img/kul-logo.png}
+\newcommand{\groupmembera}{Sonia Amiri}
+\newcommand{\groupmemberb}{Rami Berro}
+\newcommand{\groupmemberc}{Florian Braùn}
+\newcommand{\groupmemberd}{John Cai}
+\newcommand{\groupmembere}{Tom Cottem}
+\newcommand{\groupmemberf}{Thijs Creemers}
+\newcommand{\groupmemberg}{Lode Dockx}
+\newcommand{\groupnumber}{2}
+\newcommand{\academicyear}{2023-2024}
+
+% Artikel gebaseerd op LaTeX-template KUL (gevonden op Overleaf).
+\documentclass[a4paper, 12pt]{article}
+
+% Packages gebruikt door LaTeX-template KUL.
+\usepackage[dutch]{babel}
+\usepackage{graphicx}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks, linkcolor=black, citecolor=black, urlcolor=black, breaklinks]{hyperref}
+\usepackage{geometry}
+\geometry{tmargin=3cm, bmargin=2.2cm, lmargin=2.2cm, rmargin=2cm}
+% Change marginparwidth to prevent issues with todonotes.
+\setlength{\marginparwidth}{2cm}
+\usepackage{todonotes}
+\usepackage{ifthen}
+
+% Zelf toegevoegde packages.
+\usepackage{verbatim} % Voor gebruik van multi-line comments.
+
+\begin{document}
+
+% Voor geanonimiseerd rapport te maken (onderdeel template, irrelevant).
+\newboolean{anonymize}
+% Onderstaande niet uncommenten, anders geanonimiseerd rapport.
+% \setboolean{anonymize}{true}
+
+% Template titlepage.
+\begin{titlepage}
+    \newpage
+    \thispagestyle{empty}
+    \frenchspacing
+    \hspace{-0.2cm}
+    \includegraphics[height=3.4cm]{\logopath}
+    \hspace{0.2cm}
+    \rule{0.5pt}{3.4cm}
+    \hspace{0.2cm}
+    \begin{minipage}[b]{8cm}
+        \Large{Katholieke\newline Universiteit\newline Leuven}\smallskip
+        \newline
+        \large{}\smallskip\newline
+        \textbf{Departement\newline Computerwetenschappen}\smallskip
+    \end{minipage}
+    \hspace{\stretch{1}}
+    \vspace*{3.2cm}\vfill
+    \begin{center}
+        \begin{minipage}[t]{\textwidth}
+            \begin{center}
+                \LARGE{\rm{\textbf{\uppercase{\titletext}}}}\\
+                \Large{\rm{\subtitletext}}
+            \end{center}
+        \end{minipage}
+    \end{center}
+    \vfill
+    \hfill\makebox[8.5cm][l]{
+        \vbox to 7cm{\vfill\noindent
+            \ifthenelse{\boolean{anonymize}}{
+                {\rm \textbf{Anonymized}}\\
+                {\rm \academicyear}
+            }{
+                {\rm \textbf{Groep \groupnumber}}\\
+                {\rm {\groupmembera}}\\
+                {\rm {\groupmemberb}}\\
+                {\rm {\groupmemberc}}\\
+                {\rm {\groupmemberd}}\\
+                {\rm {\groupmembere}}\\
+                {\rm {\groupmemberf}}\\
+                {\rm {\groupmemberg}}\\[2mm]
+                {\rm \academicyear}
+
+            }
+        }
+    }
+\end{titlepage}
+
+% Inhoudstafel.
+\tableofcontents
+\newpage
+
+% Invoeging secties uit aparte bestanden.
+\input{onderdelen/1_intro_tom.tex}
+\newpage
+\input{onderdelen/2_ticketsys-alg_sonia.tex}
+\newpage
+\input{onderdelen/3_prob-ticketsys-spec_lode.tex}
+\newpage
+\input{onderdelen/4_capaciteitsprob_tom.tex}
+\newpage
+\input{onderdelen/5_belangen-bedrijven_john.tex}
+\newpage
+\input{onderdelen/6_belangen-klanten_thijs.tex}
+\newpage
+\input{onderdelen/7_machtsmisbruik_florian.tex}
+\newpage
+\input{onderdelen/8_maatregelen_rami.tex}
+\newpage
+\input{onderdelen/9_conclusie_lode.tex}
+\newpage
+\input{onderdelen/10_appendix-gai.tex}
+\newpage
+
+% Bibliografie.
+\begin{flushleft}
+\bibliographystyle{plain}
+\bibliography{referenties.bib}
+\end{flushleft}
+\end{document}
