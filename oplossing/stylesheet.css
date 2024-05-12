@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    background-color: #fdf6e3;
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    font-size: 5em;
+    margin: auto;
+    background-color: #9d958c;
+    border-spacing: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+td {
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ede3d3;
+    color: #696055;
+    padding: 3vw;
+    border-radius: 10px;
+}
